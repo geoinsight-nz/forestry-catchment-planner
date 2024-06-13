@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { Inter as FontSans } from "next/font/google";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        "bg-background min-h-screen font-sans antialiased",
+        "min-h-screen bg-background font-sans antialiased",
         fontSans.variable,
         GeistSans.variable,
       )}
@@ -43,6 +44,7 @@ export default function RootLayout({
           <SiteHeader />
           {children}
           <SiteFooter />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
