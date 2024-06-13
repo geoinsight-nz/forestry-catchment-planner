@@ -1,58 +1,45 @@
-import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import type { Config } from "tailwindcss"
 
-export default {
-  content: ["./src/**/*.tsx"],
+const config = {
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
-      container: {
-        center: true,
-        padding: "2rem",
-        screens: {
-          "2xl": "1400px",
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
-      width: {
-        "50vw": "50vw",
-      },
-      height: {
-        "50vh": "50vh",
-      },
-      gridTemplateColumns: {
-        "24": "repeat(24, minmax(0, 1fr))",
-      },
-      gridColumnStart: {
-        "13": "13",
-        "14": "14",
-        "15": "15",
-        "16": "16",
-        "17": "17",
-        "18": "18",
-        "19": "19",
-        "20": "20",
-        "21": "21",
-        "22": "22",
-        "23": "23",
-        "24": "24",
-      },
-      gridColumnEnd: {
-        "13": "13",
-        "14": "14",
-        "15": "15",
-        "16": "16",
-        "17": "17",
-        "18": "18",
-        "19": "19",
-        "20": "20",
-        "21": "21",
-        "22": "22",
-        "23": "23",
-        "24": "24",
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
+export default config
