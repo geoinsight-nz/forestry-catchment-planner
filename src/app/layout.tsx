@@ -1,8 +1,11 @@
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import "@/styles/globals.css";
 import { Inter as FontSans } from "next/font/google";
 
-import { GeistSans } from "geist/font/sans";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { cn } from "@/lib/utils";
+import { GeistSans } from "geist/font/sans";
 
 export const metadata = {
   title: "Create T3 App",
@@ -28,8 +31,20 @@ export default function RootLayout({
         fontSans.variable,
         GeistSans.variable,
       )}
+      suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
