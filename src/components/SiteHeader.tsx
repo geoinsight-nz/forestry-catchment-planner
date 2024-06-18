@@ -103,7 +103,7 @@ export function SiteHeader() {
             href="/"
           ></Link>
 
-          <div className="hidden md:flex ml-auto h-full items-center">
+          <div className="ml-auto hidden h-full items-center md:flex">
             <Link className="text-md mr-32" href="#">
               Documentation
             </Link>
