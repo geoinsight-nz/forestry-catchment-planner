@@ -10,7 +10,7 @@ const menuItem = [
   {
     id: 1,
     label: "Features",
-    href: "/features",
+    href: "#",
   },
   {
     id: 2,
@@ -96,14 +96,15 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in opacity-0 bg-brand-50 border-b border-primary/50 [--animation-delay:600ms]">
+      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-brand-50 opacity-0 [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
-          <Link className="text-md flex items-center" href="/">
-            Forestry Catchment Planner
-          </Link>
+          <Link
+            className="text-md flex items-center before:content-['FCP'] md:before:content-['Forestry_Catchment_Planner']"
+            href="/"
+          ></Link>
 
-          <div className="ml-auto flex h-full items-center">
-            <Link className="mr-32 text-md" href="/signin">
+          <div className="hidden md:flex ml-auto h-full items-center">
+            <Link className="text-md mr-32" href="#">
               Documentation
             </Link>
             <Link className="text-md" href="#">
