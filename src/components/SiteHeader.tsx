@@ -97,7 +97,7 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="animate-fade-in fixed left-0 top-0 z-50 w-full translate-y-[-1rem] border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
+      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
           <Link className="text-md flex items-center" href="/">
             Forestry Catchment Planner
@@ -109,7 +109,7 @@ export function SiteHeader() {
             </Link>
             <Link
               className={cn(
-                buttonVariants({ variant: "secondary" }),
+                buttonVariants({ variant: "link" }),
                 "mr-6 text-sm",
               )}
               href="#"
@@ -133,7 +133,7 @@ export function SiteHeader() {
           variants={mobilenavbarVariant}
           animate={hamburgerMenuIsOpen ? "animate" : "exit"}
           className={cn(
-            `bg-background/70 fixed left-0 top-0 z-50 h-screen w-full overflow-auto backdrop-blur-[12px] `,
+            `fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px] `,
             {
               "pointer-events-none": !hamburgerMenuIsOpen,
             },
