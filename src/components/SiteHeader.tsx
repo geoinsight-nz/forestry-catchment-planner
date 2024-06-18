@@ -162,7 +162,7 @@ export function SiteHeader() {
               <motion.li
                 variants={mobileLinkVar}
                 key={item.id}
-                className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
+                className="py-0.5 pl-6"
               >
                 <Link
                   className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
