@@ -1,6 +1,5 @@
 "use client";
 
-import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { AlignJustify, XIcon } from "lucide-react";
@@ -11,7 +10,7 @@ const menuItem = [
   {
     id: 1,
     label: "Features",
-    href: "/features",
+    href: "#",
   },
   {
     id: 2,
@@ -97,23 +96,18 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="animate-fade-in fixed left-0 top-0 z-50 w-full translate-y-[-1rem] border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
+      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-brand-50 opacity-0 [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
-          <Link className="text-md flex items-center" href="/">
-            Forestry Catchment Planner
-          </Link>
+          <Link
+            className="text-md flex items-center before:content-['FCP'] md:before:content-['Forestry_Catchment_Planner']"
+            href="/"
+          ></Link>
 
-          <div className="ml-auto flex h-full items-center">
-            <Link className="mr-6 text-sm" href="/signin">
-              About
+          <div className="ml-auto hidden h-full items-center md:flex">
+            <Link className="text-md mr-32" href="#">
+              Documentation
             </Link>
-            <Link
-              className={cn(
-                buttonVariants({ variant: "secondary" }),
-                "mr-6 text-sm",
-              )}
-              href="#"
-            >
+            <Link className="text-md" href="#">
               Open app
             </Link>
           </div>
@@ -133,7 +127,7 @@ export function SiteHeader() {
           variants={mobilenavbarVariant}
           animate={hamburgerMenuIsOpen ? "animate" : "exit"}
           className={cn(
-            `bg-background/70 fixed left-0 top-0 z-50 h-screen w-full overflow-auto backdrop-blur-[12px] `,
+            `fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px] `,
             {
               "pointer-events-none": !hamburgerMenuIsOpen,
             },
@@ -162,7 +156,7 @@ export function SiteHeader() {
               <motion.li
                 variants={mobileLinkVar}
                 key={item.id}
-                className="border-grey-dark border-b py-0.5 pl-6 md:border-none"
+                className="py-0.5 pl-6"
               >
                 <Link
                   className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${

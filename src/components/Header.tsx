@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <nav className="hidden md:block">
       <ul role="list" className="flex items-center gap-8">
-        <TopLevelNavItem href="#">Open app ↗</TopLevelNavItem>
+        <TopLevelNavItem href="/">Open app ↗</TopLevelNavItem>
         <TopLevelNavItem href="/">Documentation</TopLevelNavItem>
       </ul>
     </nav>
