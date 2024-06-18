@@ -74,6 +74,10 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      gridTemplateColumns: {
+        "16": "repeat(16, minmax(0, 1fr))",
+        "24": "repeat(24, minmax(0, 1fr))",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
