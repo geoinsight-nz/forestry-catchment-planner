@@ -8,7 +8,7 @@ import Image from "next/image";
 type FeatureCardProps = {
   id: string;
   image: string;
-    caption: string;
+  caption: string;
 };
 
 export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
