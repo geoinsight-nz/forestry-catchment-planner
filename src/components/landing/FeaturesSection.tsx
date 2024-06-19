@@ -33,6 +33,9 @@ export default function FeaturesSection() {
     <section className="min-h-screen bg-background">
       <div className="flex w-full items-start gap-20 p-8">
         <div className="w-full py-[50vh]">
+          <div className="text-3xl font-medium leading-none tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+            Visualising Forestry Harvesting Cycles
+          </div>
           <ul>
             {features.map((feature) => (
               <li key={feature.id}>
