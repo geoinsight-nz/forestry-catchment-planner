@@ -107,7 +107,7 @@
     @apply block h-auto w-full max-w-full;
   }
 
-  p {
-    font-feature-settings: "calt", "tnum", "zero", "ss03", "cv10";
+  a {
+    @apply cursor-pointer;
   }
 }
