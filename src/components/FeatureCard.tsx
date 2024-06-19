@@ -25,6 +25,7 @@ export default function FeatureCard({ id, image }: FeatureCardProps) {
           alt="Forestry Catchment Planner feature"
           fill
           className="relative h-full w-full rounded-[inherit] object-cover"
+          unoptimized
         />
       </div>
     </div>
