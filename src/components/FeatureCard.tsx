@@ -8,9 +8,10 @@ import Image from "next/image";
 type FeatureCardProps = {
   id: string;
   image: string;
+    caption: string;
 };
 
-export default function FeatureCard({ id, image }: FeatureCardProps) {
+export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
   return (
     <div
@@ -19,15 +20,16 @@ export default function FeatureCard({ id, image }: FeatureCardProps) {
         inViewFeature === id ? "opacity-100" : "pointer-events-none opacity-0",
       )}
     >
-      <div className="relative h-full w-full">
+      <figure className="relative flex h-full w-full flex-col gap-4">
         <Image
           src={image}
           alt="Forestry Catchment Planner feature"
           fill
-          className="relative h-full w-full rounded-[inherit] object-cover"
+          className="h-full w-full rounded-[inherit] object-cover"
           unoptimized
         />
-      </div>
+      </figure>
+      <p className="pt-2 text-sm text-black">{caption}</p>
     </div>
   );
 }
