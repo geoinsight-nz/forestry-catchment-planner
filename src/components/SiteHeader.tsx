@@ -1,7 +1,12 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { AlignJustify, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -76,7 +81,19 @@ export function SiteHeader() {
     },
   };
 
+  const [headerHidden, setHeaderHidden] = useState(false);
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 100) {
+      setHeaderHidden(true);
+    } else {
+      setHeaderHidden(false);
+    }
+  });
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -95,8 +112,16 @@ export function SiteHeader() {
   }, [setHamburgerMenuIsOpen]);
 
   return (
-    <>
-      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-background opacity-0 [--animation-delay:600ms]">
+    <motion.div
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      className="sticky left-0 top-0 z-50"
+      animate={headerHidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+    >
+      <header className="w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-background opacity-0 [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
           <Link
             className="text-md flex items-center before:content-['FCP'] md:before:content-['Forestry_Catchment_Planner']"
@@ -127,10 +152,8 @@ export function SiteHeader() {
           variants={mobilenavbarVariant}
           animate={hamburgerMenuIsOpen ? "animate" : "exit"}
           className={cn(
-            `fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px] `,
-            {
-              "pointer-events-none": !hamburgerMenuIsOpen,
-            },
+            "fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px]",
+            "pointer-events-none" && !hamburgerMenuIsOpen,
           )}
         >
           <div className="container flex h-[3.5rem] items-center justify-between">
@@ -147,7 +170,7 @@ export function SiteHeader() {
             </button>
           </div>
           <motion.ul
-            className={`flex flex-col uppercase ease-in md:flex-row md:items-center md:normal-case`}
+            className={`flex flex-col ease-in md:flex-row md:items-center md:normal-case`}
             variants={containerVariants}
             initial="initial"
             animate={hamburgerMenuIsOpen ? "open" : "exit"}
@@ -159,7 +182,7 @@ export function SiteHeader() {
                 className="py-0.5 pl-6"
               >
                 <Link
-                  className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
+                  className={`hover:text-grey text-md flex h-[var(--navigation-height)] w-full items-center transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
                     hamburgerMenuIsOpen ? "[&_a]:translate-y-0" : ""
                   }`}
                   href={item.href}
@@ -171,6 +194,6 @@ export function SiteHeader() {
           </motion.ul>
         </motion.nav>
       </AnimatePresence>
-    </>
+    </motion.div>
   );
 }

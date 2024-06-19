@@ -1,9 +1,9 @@
 import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 
 import ReferenceGrid from "@/components/ReferenceGrid";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
