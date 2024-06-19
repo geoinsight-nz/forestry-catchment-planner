@@ -15,7 +15,7 @@ export default function ContextSection() {
       </div>
       <div className="h-full">
         <div className="p-6">
-          <h1 className="text-balance py-6 text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="py-6 text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             Erosion in New Zealand Landscapes
           </h1>
           <p className="text-balance py-6 font-normal text-foreground">

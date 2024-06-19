@@ -1,6 +1,7 @@
 import HeroSection from "@/components/landing/HeroSection";
 import IntroSection from "@/components/landing/IntroSection";
 import ContextSection from "../components/landing/ContextSection";
+import FeaturesSection from "../components/landing/FeaturesSection";
 
 export default async function Page() {
   return (
@@ -8,6 +9,7 @@ export default async function Page() {
       <HeroSection />
       <IntroSection />
       <ContextSection />
+      <FeaturesSection />
     </>
   );
 }
