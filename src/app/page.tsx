@@ -1,9 +1,13 @@
 import HeroSection from "@/components/landing/HeroSection";
+import IntroSection from "@/components/landing/IntroSection";
+import ContextSection from "../components/landing/ContextSection";
 
 export default async function Page() {
   return (
     <>
       <HeroSection />
+      <IntroSection />
+      <ContextSection />
     </>
   );
 }
