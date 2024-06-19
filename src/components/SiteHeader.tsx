@@ -96,7 +96,7 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-brand-50 opacity-0 [--animation-delay:600ms]">
+      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-background opacity-0 [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
           <Link
             className="text-md flex items-center before:content-['FCP'] md:before:content-['Forestry_Catchment_Planner']"
