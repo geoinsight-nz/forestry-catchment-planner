@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative mx-auto mt-32 max-w-[80rem] pb-6 px-6 text-center md:px-8"
+      className="relative mx-auto mt-24 max-w-[80rem] pb-16 px-6 text-center md:px-8"
     >
       <VersionBadge />
       <HeroText />

@@ -8,7 +8,7 @@ export default function ContextSection() {
     >
       <div className="h-full">
         <img
-          src="public/images/forest_river_duotone.png"
+          src="/images/forest_river_duotone.png"
           alt=""
           className="h-full w-auto object-cover"
         />

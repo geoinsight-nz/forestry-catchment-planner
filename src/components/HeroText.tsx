@@ -6,7 +6,7 @@ export default function HeroText() {
         <br className="hidden md:block" /> Environmental Management
       </h1>
       <p className="mb-12 translate-y-[-1rem] animate-fade-in text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
-        The Forestry Catchment Planner (FCP) is a web app designed to improve
+        The Forestry Catchment Planner (FCP) is a web application designed to improve
         <br className="hidden md:block" /> environmental management within the
         forestry sector.
       </p>
