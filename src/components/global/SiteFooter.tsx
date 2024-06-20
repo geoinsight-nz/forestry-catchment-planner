@@ -78,8 +78,7 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="max-w-xs">
-              The Forestry Catchment Planner is a web app designed to improve
-              environmental management within the forestry sector.
+              Proactive forest management for the future.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
