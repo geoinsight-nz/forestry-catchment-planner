@@ -1,10 +1,10 @@
-import HeroSection from "@/components/landing/HeroSection";
-import IntroSection from "@/components/landing/IntroSection";
-import RegionsSection from "@/components/landing/RegionsSection";
-import TeamSection from "@/components/landing/TeamSection";
-import ContextSection from "../components/landing/ContextSection";
-import FeaturesSection from "../components/landing/FeaturesSection";
-import PartnersSection from "../components/landing/PartnersSection";
+import HeroSection from "@/components/sections/hero/HeroSection";
+import IntroSection from "@/components/sections/intro/IntroSection";
+import RegionsSection from "@/components/sections/regions/RegionsSection";
+import TeamSection from "@/components/sections/team/TeamSection";
+import ContextSection from "../components/sections/context/ContextSection";
+import FeaturesSection from "../components/sections/features/FeaturesSection";
+import PartnersSection from "../components/sections/partners/PartnersSection";
 
 export default async function Page() {
   return (

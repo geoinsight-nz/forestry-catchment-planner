@@ -1,5 +1,5 @@
-import { FeatureText } from "@/components/FeatureText";
-import FeatureCard from "../FeatureCard";
+import { FeatureText } from "@/components/sections/features/FeatureText";
+import FeatureCard from "./FeatureCard";
 
 const features = [
   {
