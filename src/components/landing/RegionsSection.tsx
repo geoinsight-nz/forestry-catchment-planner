@@ -29,7 +29,7 @@ export default function RegionsSection() {
       </div>
       <div className="h-full w-full max-w-[50%]">
         <img
-          src="/images/nz_map_regions.jpg"
+          src="/images/visualisations/nz_map_regions.jpg"
           alt=""
           className="h-full w-full object-cover"
         />

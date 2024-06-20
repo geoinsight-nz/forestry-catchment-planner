@@ -28,7 +28,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
       <h2
         className={cn(
           "text-2xl font-bold transition-colors",
-          isInView ? "text-black" : "text-gray-300",
+          isInView ? "text-black" : "text-black",
         )}
       >
         {title}
@@ -37,7 +37,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
         ref={ref}
         className={cn(
           "pt-6 text-2xl transition-colors",
-          isInView ? "text-black" : "text-gray-300",
+          isInView ? "text-black" : "text-black",
         )}
       >
         {body}

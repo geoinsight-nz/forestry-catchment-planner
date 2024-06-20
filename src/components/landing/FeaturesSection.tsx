@@ -6,28 +6,28 @@ const features = [
     title: "Simulate and Analyse",
     body: "Users can view geographic data and simulate the effects of clear-felling on catchment areas, measured as Catchment Management Units.",
     id: "simulate",
-    image: "/images/erosion_susceptibility_wairoa.jpg",
+    image: "/images/visualisations/erosion_susceptibility_wairoa.jpg",
     caption: "Wairoa, erosion susceptibility.",
   },
   {
     title: "Evolving Hazard Visualisation",
     body: "Understand the evolving hazards associated with forestry activities in different catchment areas.",
     id: "hazard",
-    image: "/images/landslide_susceptibility.jpg",
+    image: "/images/visualisations/landslide_susceptibility.jpg",
     caption: "Wairoa landslide susceptibility.",
   },
   {
     title: "Consistent Baseline Data",
     body: "See a consistent and accurate baseline of plantation stand age, used as a proxy for likely harvesting activity.",
     id: "data",
-    image: "/images/hillslope_units_wairoa.jpg",
+    image: "/images/visualisations/hillslope_units_wairoa.jpg",
     caption: "Wairoa hillslope units.",
   },
   {
     title: "Visual Data Tools",
     body: "Utilise a time slider and heat mapping to highlight critical catchments and forested areas needing greater attention and better management focus.",
     id: "tools",
-    image: "/images/melton_ratios.jpg",
+    image: "/images/visualisations/melton_ratios.jpg",
     caption: "Melton ratios.",
   },
 ];
@@ -53,7 +53,7 @@ export default function FeaturesSection() {
           </ul>
         </div>
         <div className="sticky top-0 flex h-screen w-full items-center">
-          <div className="relative aspect-square w-full rounded-sm bg-gray-100">
+          <div className="relative aspect-square w-full rounded-sm bg-background">
             {features.map((feature) => (
               <FeatureCard
                 id={feature.id}
