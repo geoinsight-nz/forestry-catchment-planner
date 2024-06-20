@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import VersionBadge from "@/components/VersionBadge";
+import VersionBadge from "@/components/icons/VersionBadge";
 import { cn } from "@/lib/utils";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import HeroText from "../HeroText";
+import HeroText from "./HeroText";
 
 export default function HeroSection() {
   const ref = useRef(null);
@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative mx-auto mt-24 max-w-[80rem] pb-16 px-6 text-center md:px-8"
+      className="relative mx-auto mt-24 max-w-[80rem] px-6 pb-16 text-center md:px-8"
     >
       <VersionBadge />
       <HeroText />

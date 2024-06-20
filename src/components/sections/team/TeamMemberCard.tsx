@@ -21,7 +21,7 @@ export default function TeamMemberCard({
           id={id}
           src={image}
           alt={name}
-          className="aspect-[2/3] h-full w-full object-cover object-center"
+          className="aspect-[2/3] h-full w-full object-cover object-top"
         />
       </div>
       <div className="mt-auto flex h-12 flex-col pt-2">

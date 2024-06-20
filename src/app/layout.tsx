@@ -1,10 +1,10 @@
-import { SiteFooter } from "@/components/SiteFooter";
+import { SiteFooter } from "@/components/global/SiteFooter";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 
-import ReferenceGrid from "@/components/ReferenceGrid";
-import { SiteHeader } from "@/components/SiteHeader";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import ReferenceGrid from "@/components/utilities/ReferenceGrid";
+import { SiteHeader } from "@/components/global/SiteHeader";
+import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
