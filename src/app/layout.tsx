@@ -1,6 +1,6 @@
 import { SiteFooter } from "@/components/SiteFooter";
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 import ReferenceGrid from "@/components/ReferenceGrid";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -16,8 +16,17 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const inter = Inter({
-  subsets: ["latin"],
+const inter = localFont({
+  src: [
+    {
+      path: "../../public/fonts/InterVariable.woff2",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/InterVariable-Italic.woff2",
+      style: "italic",
+    },
+  ],
   variable: "--font-inter",
 });
 

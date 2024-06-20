@@ -29,12 +29,12 @@ export default function HeroSection() {
         >
           <div className="mx-auto h-full max-w-4xl">
             <img
-              src="/images/desktop_fcp.png"
+              src="/images/mockups/desktop_fcp.png"
               alt="Hero Image"
               className="relative hidden h-full w-full rounded-[inherit] object-contain dark:block"
             />
             <img
-              src="/images/desktop_fcp.png"
+              src="/images/mockups/desktop_fcp.png"
               alt="Hero Image"
               className="relative block h-full w-full rounded-[inherit] object-contain dark:hidden"
             />

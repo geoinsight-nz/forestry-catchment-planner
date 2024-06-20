@@ -27,8 +27,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
     <div className="py-16">
       <h2
         className={cn(
-          "text-2xl font-bold transition-colors",
-          isInView ? "text-black" : "text-gray-300",
+          "text-2xl font-bold transition-colors text-foreground dark:text-foregound",
         )}
       >
         {title}
@@ -36,8 +35,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
       <p
         ref={ref}
         className={cn(
-          "pt-6 text-2xl transition-colors",
-          isInView ? "text-black" : "text-gray-300",
+          "pt-6 text-2xl transition-colors text-foreground dark:text-foregound",
         )}
       >
         {body}

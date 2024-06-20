@@ -8,7 +8,7 @@ import Image from "next/image";
 type FeatureCardProps = {
   id: string;
   image: string;
-    caption: string;
+  caption: string;
 };
 
 export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
@@ -29,7 +29,7 @@ export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
           unoptimized
         />
       </figure>
-      <p className="pt-2 text-sm text-black">{caption}</p>
+      <p className="pt-2 text-sm text-foreground">{caption}</p>
     </div>
   );
 }

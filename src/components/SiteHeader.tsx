@@ -2,10 +2,10 @@
 
 import { cn } from "@/lib/utils";
 import {
-  AnimatePresence,
-  motion,
-  useMotionValueEvent,
-  useScroll,
+    AnimatePresence,
+    motion,
+    useMotionValueEvent,
+    useScroll,
 } from "framer-motion";
 import { AlignJustify, XIcon } from "lucide-react";
 import Link from "next/link";

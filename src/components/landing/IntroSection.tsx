@@ -32,7 +32,7 @@ export default function IntroSection() {
       </div>
       <div className="h-full">
         <img
-          src="/images/forest_trees_duotone.png"
+          src="/images/forests/forest_trees_duotone.png"
           alt=""
           className="h-full w-auto object-cover"
         />
