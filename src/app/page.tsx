@@ -4,6 +4,7 @@ import RegionsSection from "@/components/landing/RegionsSection";
 import TeamSection from "@/components/landing/TeamSection";
 import ContextSection from "../components/landing/ContextSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
+import PartnersSection from "../components/landing/PartnersSection";
 
 export default async function Page() {
   return (
@@ -14,6 +15,7 @@ export default async function Page() {
       <FeaturesSection />
       <RegionsSection />
       <TeamSection />
+      <PartnersSection />
     </>
   );
 }
