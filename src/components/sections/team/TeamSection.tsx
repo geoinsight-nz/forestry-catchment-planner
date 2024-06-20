@@ -26,6 +26,7 @@ const team = [
   },
   {
     name: "Pete Watt",
+    role: "Head Of Resource Monitoring",
     instition: "Indufor",
     id: "pete-watt",
     image: "/images/team/pete_watt.png",
