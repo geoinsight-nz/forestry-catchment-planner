@@ -1,11 +1,12 @@
 "use client";
 
+import BrandIcon from "@/components/icons/BrandIcon";
 import { cn } from "@/lib/utils";
 import {
-    AnimatePresence,
-    motion,
-    useMotionValueEvent,
-    useScroll,
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
 } from "framer-motion";
 import { AlignJustify, XIcon } from "lucide-react";
 import Link from "next/link";
@@ -123,10 +124,15 @@ export function SiteHeader() {
     >
       <header className="w-full translate-y-[-1rem] animate-fade-in border-b border-primary/50 bg-background opacity-0 [--animation-delay:600ms]">
         <div className="container flex h-[3.5rem] items-center justify-between">
-          <Link
-            className="text-md flex items-center before:content-['FCP'] md:before:content-['Forestry_Catchment_Planner']"
-            href="/"
-          ></Link>
+          <div className="flex items-center gap-4">
+            <Link href="/">
+              <BrandIcon className="size-8" />
+            </Link>
+            <Link
+              className="text-md flex items-center after:content-['FCP'] md:after:content-['Forestry_Catchment_Planner']"
+              href="/"
+            ></Link>
+          </div>
 
           <div className="ml-auto hidden h-full items-center md:flex">
             <Link className="text-md mr-32" href="#">
