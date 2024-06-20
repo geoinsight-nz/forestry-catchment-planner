@@ -6,10 +6,10 @@ export default function RegionsSection() {
     >
       <div className="h-full">
         <div className="p-6">
-          <h1 className="py-6 text-3xl font-medium leading-none tracking-tighter text-inverted-foreground dark:text-inverted-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="py-6 text-3xl font-medium leading-none tracking-tighter text-inverted-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             Regions
           </h1>
-          <h2 className="text-balance py-6 text-xl font-medium leading-none tracking-tighter text-inverted-foreground dark:text-inverted-foreground sm:text-2xl md:text-3xl lg:text-4xl">
+          <h2 className="text-balance py-6 text-xl font-medium leading-none tracking-tighter text-inverted-foreground dark:text-foreground sm:text-2xl md:text-3xl lg:text-4xl">
             The Forestry Catchment Planner initially focuses on five targeted
             regions: Te Tauihu (Tasman, Nelson, Marlborough), Te Matau-a-Māui
             (Hawkes Bay), and Tairāwhiti (Gisborne), with the goal of expanding

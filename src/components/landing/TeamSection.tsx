@@ -6,7 +6,7 @@ const team = [
     role: "Science Lead",
     instition: "GNS Science",
     id: "brenda-rosser",
-    image: "/images/team/brenda_rosser.jpg",
+    image: "/images/team/brenda_rosser.png",
   },
   {
     name: "Mark Bloomberg",
@@ -14,7 +14,7 @@ const team = [
     instition:
       "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
     id: "mark-bloomberg",
-    image: "/images/team/mark_bloomberg.jpg",
+    image: "/images/team/mark_bloomberg.png",
   },
   {
     name: "Andrew Holdaway",
@@ -22,34 +22,34 @@ const team = [
     instition:
       "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
     id: "andrew-holdaway",
-    image: "/images/team/andrew_holdaway.jpg",
+    image: "/images/team/andrew_holdaway.png",
   },
   {
     name: "Pete Watt",
     instition: "Indufor",
     id: "pete-watt",
-    image: "/images/team/pete_watt.jpg",
+    image: "/images/team/pete_watt.png",
   },
   {
     name: "Blaine Western",
     role: "Head of Design and Interaction",
     instition: "GeoInsight",
     id: "blaine-western",
-    image: "/images/team/blaine_western.jpg",
+    image: "/images/team/blaine_western.png",
   },
   {
     name: "Mark Spencer",
     role: "Director, Operations Manager",
     instition: "GeoInsight",
     id: "mark-spencer",
-    image: "/images/team/mark_spencer.jpg",
+    image: "/images/team/mark_spencer.png",
   },
   {
     name: "Rob Besaans",
     role: "Director, Geospatial & Software Lead",
     instition: "GeoInsight",
     id: "rob-besaans",
-    image: "/images/team/rob_besaans.jpg",
+    image: "/images/team/rob_besaans.png",
   },
 ];
 

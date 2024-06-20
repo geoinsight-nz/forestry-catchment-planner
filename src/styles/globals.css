@@ -68,6 +68,9 @@
     --background: var(--brand-950);
     --foreground: 0 0% 98%;
 
+    --inverted-background: 0 0% 100%;
+    --inverted-foreground: 0 0% 3.9%;
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
 
