@@ -24,8 +24,7 @@ const partners = [
   },
   {
     id: "uc",
-    title: "Te Kura Ngahere",
-    subtitle: "The School of Forestry",
+    title: "The University of Canterbury",
     body: "The University of Canterbury (UC) is the only university in New Zealand offering professional forestry degree programs, with researchers working on industry-driven and academic projects in Forestry Science and Forest Engineering, fostering strong relationships with local forest organisations.",
     src: "university_canterbury.png",
     color: "#BBE2E6",
@@ -34,7 +33,7 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="h-screen bg-background p-6">
+    <section className="min-h-screen bg-background p-6">
       <h1 className="py-6 text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
         Partners
       </h1>
@@ -46,7 +45,6 @@ export default function PartnersSection() {
                 key={partner.id}
                 id={partner.id}
                 title={partner.title}
-                subtitle={partner.subtitle}
                 body={partner.body}
                 src={partner.src}
                 color={partner.color}
