@@ -16,7 +16,7 @@ export default function RegionsSection() {
             deployment throughout Aotearoa.
           </h2>
           <div className="flex flex-col gap-4 py-6">
-            <p className="text-balance text-xl font-normal text-inverted-foreground">
+            <p className="text-balance text-xl font-normal dark:text-foreground text-inverted-foreground">
               This project will surface data and information that is currently
               inaccessible to many due to resource limitations, empowering the
               forestry sector to showcase progressive and proactive catchment

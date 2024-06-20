@@ -25,14 +25,14 @@ export default function TeamMemberCard({
         />
       </div>
       <div className="mt-auto flex h-12 flex-col pt-2">
-        <h3 className="text-base font-medium text-foreground">{name}</h3>
+        <h3 className="text-base font-medium text-foreground dark:text-inverted-foreground">{name}</h3>
         {role && (
-          <h3 className="text-xs font-normal uppercase text-foreground">
+          <h3 className="text-xs font-normal uppercase text-foreground dark:text-inverted-foreground">
             {role}
           </h3>
         )}
         {instition && (
-          <h3 className="text-xs font-normal uppercase text-foreground">
+          <h3 className="text-xs font-normal uppercase text-foreground dark:text-inverted-foreground">
             {instition}
           </h3>
         )}
