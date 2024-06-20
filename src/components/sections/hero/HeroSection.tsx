@@ -24,18 +24,18 @@ export default function HeroSection() {
         <div
           className={cn(
             inView ? "before:animate-image-glow" : "",
-            "rounded-xl bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0",
+            "rounded-xl bg-background bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0",
           )}
         >
           <div className="mx-auto h-full max-w-4xl">
             <img
               src="/images/mockups/desktop_fcp.png"
-              alt="Hero Image"
+              alt="FCP"
               className="relative hidden h-full w-full rounded-[inherit] object-contain dark:block"
             />
             <img
               src="/images/mockups/desktop_fcp.png"
-              alt="Hero Image"
+              alt="FCP"
               className="relative block h-full w-full rounded-[inherit] object-contain dark:hidden"
             />
           </div>
