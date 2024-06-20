@@ -15,22 +15,22 @@ import { useEffect, useState } from "react";
 const menuItem = [
   {
     id: 1,
-    label: "Features",
+    label: "Documentation",
     href: "#",
   },
   {
     id: 2,
-    label: "Pricing",
+    label: "Credits",
     href: "#",
   },
   {
     id: 3,
-    label: "Careers",
+    label: "App",
     href: "#",
   },
   {
     id: 4,
-    label: "Contact Us",
+    label: "Contact",
     href: "#",
   },
 ];
@@ -158,7 +158,7 @@ export function SiteHeader() {
           variants={mobilenavbarVariant}
           animate={hamburgerMenuIsOpen ? "animate" : "exit"}
           className={cn(
-            "fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px]",
+            "fixed left-0 top-0 z-50 block h-screen w-full overflow-auto bg-background/70 backdrop-blur-[100px] sm:hidden",
             "pointer-events-none" && !hamburgerMenuIsOpen,
           )}
         >
