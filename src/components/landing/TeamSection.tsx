@@ -59,7 +59,7 @@ export default function TeamSection() {
       <h1 className="py-6 text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
         Team
       </h1>
-      <div className="grid grid-flow-row grid-cols-4 gap-x-2 gap-y-32 pt-6">
+      <div className="grid grid-flow-row grid-cols-5 gap-x-2 gap-y-32 pt-6">
         {team.map((member) => (
           <div key={member.id} className="col-span-1 w-auto">
             <TeamMemberCard
