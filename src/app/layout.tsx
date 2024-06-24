@@ -11,10 +11,34 @@ import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.forestrycatchmentplanner.nz"),
   title: "Forestry Catchment Planner",
   description:
     "The Forestry Catchment Planner is a web app designed to improve environmental management within the forestry sector.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  openGraph: {
+    title: "Forestry Catchment Planner",
+    url: "https://www.forestrycatchmentplanner.nz",
+    siteName: "Forestry Catchment Planner",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: `https://www.forestrycatchmentplanner.nz/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "Forestry Catchment Planner",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 const inter = localFont({
