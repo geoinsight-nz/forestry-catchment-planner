@@ -3,6 +3,10 @@
 import BrandIcon from "@/components/icons/BrandIcon";
 import { cn } from "@/lib/utils";
 import {
+  ClipboardDocumentListIcon,
+  MapIcon,
+} from "@heroicons/react/24/outline";
+import {
   AnimatePresence,
   motion,
   useMotionValueEvent,
@@ -134,11 +138,13 @@ export function SiteHeader() {
             ></Link>
           </div>
 
-          <div className="ml-auto hidden h-full items-center md:flex">
-            <Link className="text-md mr-32" href="#">
+          <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
+            <Link className="text-md mr-32 flex space-x-4" href="#">
+              <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
               Documentation
             </Link>
-            <Link className="text-md" href="#">
+            <Link className="text-md flex space-x-4" href="#">
+              <MapIcon className="size-6 text-brand-900 dark:text-foreground" />
               Open app
             </Link>
           </div>
