@@ -138,19 +138,15 @@ export function SiteHeader() {
             ></Link>
           </div>
 
-          <div className="ml-auto hidden h-full items-center md:flex space-x-16">
-            <div className="flex space-x-4">
+          <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
+            <Link className="text-md mr-32 flex space-x-4" href="#">
               <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
-              <Link className="text-md mr-32" href="#">
-                Documentation
-              </Link>
-            </div>
-            <div className="flex space-x-4">
+              Documentation
+            </Link>
+            <Link className="text-md flex space-x-4" href="#">
               <MapIcon className="size-6 text-brand-900 dark:text-foreground" />
-              <Link className="text-md" href="#">
-                Open app
-              </Link>
-            </div>
+              Open app
+            </Link>
           </div>
           <button
             className="ml-6 md:hidden"
