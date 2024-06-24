@@ -16,7 +16,7 @@ export default function RegionsSection() {
             deployment throughout Aotearoa.
           </h2>
           <div className="flex flex-col gap-4 py-6">
-            <p className="text-balance text-xl font-normal dark:text-foreground text-inverted-foreground">
+            <p className="text-balance text-xl font-normal text-inverted-foreground dark:text-foreground">
               This project will surface data and information that is currently
               inaccessible to many due to resource limitations, empowering the
               forestry sector to showcase progressive and proactive catchment
@@ -29,7 +29,7 @@ export default function RegionsSection() {
       </div>
       <div className="h-full w-full max-w-[50%]">
         <img
-          src="/images/visualisations/nz_map_regions.jpg"
+          src="/images/visualisations/nz_regions_dark.png"
           alt=""
           className="h-full w-full object-cover"
         />
