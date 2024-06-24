@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { type PluginUtils } from "tailwindcss/types/config";
 
 export default function typographyStyles({ theme }: PluginUtils) {
@@ -269,7 +270,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
         // Inline elements
         a: {
           color: "var(--tw-prose-links)",
-          textDecoration: "underline transparent",
+          textDecoration: "underline transparent underline-offset-8",
           fontWeight: "500",
           transitionProperty: "color, text-decoration-color",
           transitionDuration: theme("transitionDuration.DEFAULT"),
