@@ -139,13 +139,20 @@ export function SiteHeader() {
           </div>
 
           <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
-            <Link className="group flex space-x-4" href="#">
+            <Link
+              className="group flex space-x-4"
+              href="https://docs.forestrycatchmentplanner.nz"
+              target="_blank"
+              rel="noopener"
+            >
               <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
               <h2 className="text-md group-hover:underline">Documentation</h2>
             </Link>
             <Link
               className="text-md group flex space-x-4 group-hover:underline"
-              href="#"
+              href="https://catchment.staging.maphq.co.nz/"
+              target="_blank"
+              rel="noopener"
             >
               <MapIcon className="size-6 text-brand-900 dark:text-foreground" />
               <h2 className="text-md group-hover:underline">Open app</h2>
