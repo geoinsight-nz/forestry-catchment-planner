@@ -1,6 +1,7 @@
 import { SiteFooter } from "@/components/global/SiteFooter";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
+import { type Metadata } from "next";
 
 import ReferenceGrid from "@/components/utilities/ReferenceGrid";
 import { SiteHeader } from "@/components/global/SiteHeader";
@@ -9,7 +10,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { GeistSans } from "geist/font/sans";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Forestry Catchment Planner",
   description:
     "The Forestry Catchment Planner is a web app designed to improve environmental management within the forestry sector.",

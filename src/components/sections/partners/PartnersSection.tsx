@@ -4,30 +4,38 @@ const partners = [
   {
     id: "geoinsight",
     title: "GeoInsight",
-    body: "GeoInsight, a geospatial software consultancy, specialises in customised mapping solutions for sustainable decision-making and communication, and they were responsible for the project management and communication of the complex science in an accessible and intuitive form.",
+    about:
+      "GeoInsight is a geospatial software consultancy offering customised mapping solutions to help companies identify patterns, make informed decisions, and communicate better for a sustainable future.",
+    body: "They were responsible for the project management and coordination of effort across all project work streams. Their key function in the project focused on geospatial data visualisation and communicating the complex science in an intuitive and user friendly manner.",
     src: "geoinsight.png",
     color: "#BBE2E6",
   },
   {
-    id: "indufor",
-    title: "Indufor",
-    body: "Indufor Group, a leading forest sector consulting firm with over 43 years of experience, provides high-quality analysis and services to develop sustainable, nature-based forest management solutions addressing global challenges and supporting clients' missions.",
-    src: "indufor.png",
-    color: "#000000",
-  },
-  {
     id: "gns",
     title: "GNS Science",
-    body: "GNS Science envisions a cleaner, safer, and more prosperous future for Aotearoa New Zealand by researching geological and Earth-system processes, increasing resilience to natural hazards and climate change, and driving sustainable economic growth in the energy sector.",
+    about:
+      "GNS Science envisions a cleaner, safer, and more prosperous future for Aotearoa New Zealand by researching geological and Earth-system processes, increasing resilience to natural hazards and climate change, and driving sustainable economic growth in the energy sector.",
+    body: "Their role in the project was a significant one, calculating the Landslide susceptibility modelling using their internal Rainfall Induced Landslide Models, deriving Hillslope and Catchment Management Units from available watershed data sources and calculating the Melton Ratios for debris flow probability.",
     src: "gns.png",
     color: "#000000",
   },
   {
     id: "uc",
     title: "The University of Canterbury",
-    body: "The University of Canterbury (UC) is the only university in New Zealand offering professional forestry degree programs, with researchers working on industry-driven and academic projects in Forestry Science and Forest Engineering, fostering strong relationships with local forest organisations.",
+    about:
+      "The University of Canterbury (UC) is the only university in New Zealand offering professional forestry degree programs, with researchers working on industry-driven and academic projects in Forestry Science and Forest Engineering, fostering strong relationships with local forest organisations.",
+    body: "Their role in the project was significant and provided key insight into forestry contexts, guidance around the analysis, literature review and assistance throughout the Landslide and Melton ratio modelling.",
     src: "university_canterbury.png",
     color: "#BBE2E6",
+  },
+  {
+    id: "indufor",
+    title: "Indufor",
+    about:
+      "Indufor Group, a leading forest sector consulting firm with over 43 years of experience, provides high-quality analysis and services to develop sustainable, nature-based forest management solutions addressing global challenges and supporting clients' missions.",
+    body: "Indufors role in the project was to calculate forest stand ages and the spatial extents of the forest stands across Te Tauihu (Top of the South Island), Te Matau-a-Māui (Hawkes Bay), and Tairāwhiti (Gisborne).",
+    src: "indufor.png",
+    color: "#000000",
   },
 ];
 

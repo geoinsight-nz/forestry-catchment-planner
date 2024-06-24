@@ -7,9 +7,7 @@ await import("./src/env.js");
 /** @type {import("next").NextConfig} */
 const config = {
   output: "export",
-  images: {
-    unoptimized: true,
-  },
+  images: { unoptimized: true, domains: ['github.com'] },
 };
 
 export default config;
