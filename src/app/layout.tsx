@@ -1,10 +1,10 @@
-import { SiteFooter } from "@/components/global/SiteFooter";
+import { SiteFooter } from "@/components/shared/SiteFooter";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 import { type Metadata } from "next";
 
 import ReferenceGrid from "@/components/utilities/ReferenceGrid";
-import { SiteHeader } from "@/components/global/SiteHeader";
+import { SiteHeader } from "@/components/shared/SiteHeader";
 import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";

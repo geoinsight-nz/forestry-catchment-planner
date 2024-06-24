@@ -113,4 +113,8 @@
   a {
     @apply cursor-pointer;
   }
+
+  [inert] ::-webkit-scrollbar {
+    display: none;
+  }
 }

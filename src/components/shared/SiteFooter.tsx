@@ -126,7 +126,12 @@ export function SiteFooter() {
           </span>
         </div>
       </div>
-      {/*   <SiteBanner /> */}
     </footer>
   );
+}
+
+function Credits() {
+    return (
+        <div>Credits</div>
+    )
 }
