@@ -111,7 +111,7 @@
   }
 
   a {
-    @apply cursor-pointer;
+    @apply cursor-pointer underline-offset-8 decoration-2;
   }
 
   [inert] ::-webkit-scrollbar {

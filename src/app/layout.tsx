@@ -70,7 +70,7 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
-      <body>
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
