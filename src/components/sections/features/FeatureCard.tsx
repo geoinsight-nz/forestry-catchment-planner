@@ -25,11 +25,11 @@ export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
           src={image}
           alt="Forestry Catchment Planner feature"
           fill
-          className="h-full w-full rounded-[inherit] object-cover"
+          className="h-full w-full rounded-[inherit] object-contain"
           unoptimized
         />
       </figure>
-      <p className="pt-2 text-sm text-foreground">{caption}</p>
+      {/* <p className="pt-2 text-sm text-foreground">{caption}</p> */}
     </div>
   );
 }

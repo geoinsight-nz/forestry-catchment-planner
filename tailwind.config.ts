@@ -105,6 +105,8 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       gridTemplateColumns: {
+        "auto-fit-300": "repeat(auto-fit, minmax(300px, 1fr))",
+        "auto-fill-300": "repeat(auto-fill, minmax(300px, 1fr))",
         "16": "repeat(16, minmax(0, 1fr))",
         "24": "repeat(24, minmax(0, 1fr))",
       },
