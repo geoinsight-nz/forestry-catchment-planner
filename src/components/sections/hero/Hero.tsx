@@ -20,12 +20,12 @@ export default function Hero() {
       >
         <div className="mx-auto h-full max-w-4xl">
           <img
-            src="/images/mockups/desktop_fcp.png"
+            src="/images/mockups/monitor_1.png"
             alt="FCP"
             className="relative hidden h-full w-full rounded-[inherit] object-contain dark:block"
           />
           <img
-            src="/images/mockups/desktop_fcp.png"
+            src="/images/mockups/monitor_1.png"
             alt="FCP"
             className="relative block h-full w-full rounded-[inherit] object-contain dark:hidden"
           />
