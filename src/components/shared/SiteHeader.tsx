@@ -20,7 +20,7 @@ const menuItem = [
   {
     id: 1,
     label: "Documentation",
-    href: "https://www.forestrycatchmentplanner.nz",
+    href: "https://www.docs.forestrycatchmentplanner.nz",
   },
   {
     id: 2,

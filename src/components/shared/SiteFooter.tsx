@@ -1,4 +1,3 @@
-import { DiscordLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 const footerNavs = [
@@ -6,34 +5,37 @@ const footerNavs = [
     label: "Product",
     items: [
       {
-        href: "/",
-        name: "Email Collection",
+        href: "https://catchment.staging.maphq.co.nz",
+        name: "Application",
       },
       {
-        href: "/pricing",
-        name: "Pricing",
+        href: "https://www.docs.forestrycatchmentplanner.nz",
+        name: "Documentation",
       },
       {
-        href: "/faq",
-        name: "FAQ",
+        href: "mailto:info@geoinsight.co.nz",
+        name: "Contact",
       },
     ],
   },
-
   {
-    label: "Community",
+    label: "Partners",
     items: [
       {
-        href: "/",
-        name: "Discord",
+        href: "https://www.geoinsight.co.nz",
+        name: "GeoInsight",
       },
       {
-        href: "/",
-        name: "Twitter",
+        href: "https://induforgroup.com",
+        name: "Indufor",
       },
       {
-        href: "mailto:hello@chatcollect.com",
-        name: "Email",
+        href: "https://www.gns.cri.nz",
+        name: "GNS Science",
+      },
+      {
+        href: "https://www.canterbury.ac.nz/study/academic-study/engineering/schools-and-departments-engineering-forestry-product-design/school-of-forestry",
+        name: "The University of Canterbury",
       },
     ],
   },
@@ -41,28 +43,15 @@ const footerNavs = [
     label: "Legal",
     items: [
       {
-        href: "/terms",
+        href: "#",
         name: "Terms",
       },
 
       {
-        href: "/privacy",
+        href: "#",
         name: "Privacy",
       },
     ],
-  },
-];
-
-const footerSocials = [
-  {
-    href: "",
-    name: "Discord",
-    icon: <DiscordLogoIcon className="h-4 w-4" />,
-  },
-  {
-    href: "",
-    name: "Twitter",
-    icon: <TwitterLogoIcon className="h-4 w-4" />,
   },
 ];
 
@@ -72,7 +61,12 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-screen-xl xl:pb-2">
         <div className="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
-            <Link href="/" className="flex items-center gap-2">
+            <Link
+                          href="https://catchment.staging.maphq.co.nz"
+                          target="_blank"
+                          rel="noopener"
+              className="flex items-center gap-2"
+            >
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Forestry Catchment Planner
               </span>
@@ -105,18 +99,6 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-2 rounded-md border-neutral-700/20 px-8 py-4 sm:flex sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex space-x-5 sm:mt-0 sm:justify-center">
-            {footerSocials.map((social) => (
-              <Link
-                key={social.name}
-                href={social.href}
-                className="fill-gray-500 text-gray-500 hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
-              >
-                {social.icon}
-                <span className="sr-only">{social.name}</span>
-              </Link>
-            ))}
-          </div>
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <Link href="/" className="cursor-pointer">
