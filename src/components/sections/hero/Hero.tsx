@@ -2,7 +2,11 @@
 
 import { cn } from "@/lib/utils";
 import { useInView } from "framer-motion";
+
+import Image from "next/image";
 import { useRef } from "react";
+
+import monitor from "/public/images/mockups/monitor_1.png";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -18,15 +22,17 @@ export default function Hero() {
           "rounded-xl bg-background bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0",
         )}
       >
-        <div className="mx-auto h-full max-w-4xl">
-          <img
-            src="/images/mockups/monitor_1.png"
+        <div className="relative mx-auto h-full max-w-4xl">
+          <Image
+            src={monitor}
             alt="FCP"
+            sizes="100vw"
             className="relative hidden h-full w-full rounded-[inherit] object-contain dark:block"
           />
-          <img
-            src="/images/mockups/monitor_1.png"
+          <Image
+            src={monitor}
             alt="FCP"
+            sizes="100vw"
             className="relative block h-full w-full rounded-[inherit] object-contain dark:hidden"
           />
         </div>

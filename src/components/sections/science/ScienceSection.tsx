@@ -1,6 +1,6 @@
 export default function ScienceSection() {
   return (
-    <section id="science" className="flex h-screen flex-col">
+    <section id="science" className="h-screen w-full">
       <div className="grid-cols-auto-fill-300 grid h-full max-w-full place-items-center gap-x-4 gap-y-16">
         <div className="flex h-[22rem] w-80 flex-col">
           <p className="text-sm">
