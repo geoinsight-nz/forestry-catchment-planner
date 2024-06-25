@@ -56,7 +56,7 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section className="dark:bg-brand-50 flex flex-col gap-12 h-full min-h-screen bg-background px-6 py-20">
+    <section className="flex h-full min-h-screen flex-col gap-12 bg-background px-6 py-20 dark:bg-brand-50">
       <h1 className="text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-inverted-foreground sm:text-4xl md:text-5xl lg:text-6xl">
         Team
       </h1>
