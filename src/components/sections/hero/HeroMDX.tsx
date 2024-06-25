@@ -11,7 +11,7 @@ const components = {
   ) => (
     <h1
       {...props}
-      className="translate-y-[-1rem] mx-auto animate-fade-in text-balance py-6 text-5xl font-medium leading-none tracking-tighter opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl"
+      className="mx-auto translate-y-[-1rem] animate-fade-in text-balance py-6 text-5xl font-medium leading-none tracking-tighter opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl"
     >
       {props.children}
     </h1>
@@ -31,9 +31,11 @@ const components = {
 
 export function HeroMDX(props: any) {
   return (
-    <MDXRemote
-      {...props}
-      components={{ ...components, ...(props.components || {}) }}
-    />
+    <div className="flex h-full w-full flex-col items-center justify-center">
+      <MDXRemote
+        {...props}
+        components={{ ...components, ...(props.components || {}) }}
+      />
+    </div>
   );
 }
