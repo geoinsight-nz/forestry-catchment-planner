@@ -53,6 +53,7 @@ export default function PartnersSection() {
                 key={partner.id}
                 id={partner.id}
                 title={partner.title}
+                about={partner.about}
                 body={partner.body}
                 src={partner.src}
                 color={partner.color}
