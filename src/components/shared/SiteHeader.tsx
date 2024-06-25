@@ -20,22 +20,17 @@ const menuItem = [
   {
     id: 1,
     label: "Documentation",
-    href: "#",
+    href: "https://www.forestrycatchmentplanner.nz",
   },
   {
     id: 2,
-    label: "Credits",
-    href: "#",
+    label: "App",
+    href: "https://catchment.staging.maphq.co.nz",
   },
   {
     id: 3,
-    label: "App",
-    href: "#",
-  },
-  {
-    id: 4,
     label: "Contact",
-    href: "#",
+    href: "mailto:info@geoinsight.co.nz",
   },
 ];
 
