@@ -40,7 +40,7 @@ const footerNavs = [
     ],
   },
   {
-    label: "Legal",
+    label: "Imprint",
     items: [
       {
         href: "#",
