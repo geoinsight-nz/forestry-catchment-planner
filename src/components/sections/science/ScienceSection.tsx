@@ -7,7 +7,7 @@ export default function ScienceSection() {
       className="h-full min-h-screen w-full bg-background p-6"
     >
       <header className="mb-[80px] max-w-[50vw]">
-        <h2 className="text-balance text-3xl font-medium tracking-tighter text-inverted-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+        <h2 className="text-balance text-3xl font-medium tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
           Key questions
         </h2>
       </header>

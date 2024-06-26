@@ -18,7 +18,7 @@ export default function TeamMemberCard({
 }: TeamMemberProps) {
   return (
     <div className="flex h-full w-full flex-col">
-      <div className="relative h-full w-full">
+      <div className="relative">
         <Image
           id={id}
           src={image}
@@ -27,12 +27,12 @@ export default function TeamMemberCard({
           className="aspect-[2/3] h-auto w-full object-cover object-top"
         />
       </div>
-      <div className="flex h-fit flex-col pt-3">
+      <div className="flex h-fit flex-col pt-3 items-start justify-start">
         <Prose>
           <h3 className="text-lg font-medium text-foreground dark:text-inverted-foreground">
             {name}
           </h3>
-          <span className="flex flex-col gap-0">
+          <span className="m-0 p-0 flex flex-col gap-0">
             {role && (
               <p className="m-0 p-0 text-xs font-normal text-foreground dark:text-inverted-foreground">
                 {role}

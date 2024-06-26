@@ -18,16 +18,20 @@
     --brand-900: 197, 32%, 24%;
     --brand-950: 198, 39%, 15%;
 
-    --background: 198, 39%, 15%;
+    /* --background: 198, 39%, 15%; */
+    --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
     --inverted-background: 0 0% 3.9%;
-    --inverted-foreground: 198, 39%, 15%;
+    /* --inverted-foreground: 198, 39%, 15%; */
+    --inverted-foreground: 0 0% 100%;
 
-    --card: 198, 39%, 15%;
+    /* --card: 198, 39%, 15%; */
+    --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
 
-    --popover: 198, 39%, 15%;
+    /* --popover: 198, 39%, 15%; */
+    --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
     --primary: 0 0% 9%;
