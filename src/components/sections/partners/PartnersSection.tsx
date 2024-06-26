@@ -31,13 +31,13 @@ const partners = [
   {
     id: "indufor",
     title: "Indufor",
-    about:
-      "Indufor Group, a leading forest sector consulting firm with over 43 years of experience, provides high-quality analysis and services to develop sustainable, nature-based forest management solutions addressing global challenges and supporting clients' missions.",
-    body: "Indufors role in the project was to calculate forest stand ages and the spatial extents of the forest stands across Te Tauihu (Top of the South Island), Te Matau-a-Māui (Hawkes Bay), and Tairāwhiti (Gisborne).",
+    about: "Indufor's resource monitoring team is part of Indufor Group, a leading forest sector consulting firm that provides high-quality analysis to forest growers, investors, and government agencies. The monitoring team specialises in creating insights from remote sensing technologies to enhance management and investment decisions.",
+    body: "Indufor's role in the project was to calculate forest stand ages and map the spatial extent of the forest stands across Te Tauihu (Top of the South Island), Te Matau-a-Māui (Hawkes Bay), and Tairāwhiti (Gisborne).",
     src: "indufor.png",
     color: "#000000",
   },
 ];
+
 
 export default function PartnersSection() {
   return (
