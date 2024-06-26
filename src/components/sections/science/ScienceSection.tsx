@@ -125,7 +125,7 @@ function ComputerIcon(props: React.ComponentPropsWithoutRef<"svg">) {
       stroke-width="1"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-computer"
+      className="lucide lucide-computer"
       {...props}
     >
       <rect width="14" height="8" x="5" y="2" rx="2" />
@@ -148,7 +148,7 @@ function TreesIcon(props: React.ComponentPropsWithoutRef<"svg">) {
       stroke-width="1"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-trees"
+      className="lucide lucide-trees"
       {...props}
     >
       <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" />
@@ -171,7 +171,7 @@ function RainbowIcon(props: React.ComponentPropsWithoutRef<"svg">) {
       stroke-width="1"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-rainbow"
+      className="lucide lucide-rainbow"
       {...props}
     >
       <path d="M22 17a10 10 0 0 0-20 0" />
