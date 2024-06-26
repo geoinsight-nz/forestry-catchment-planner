@@ -25,7 +25,7 @@ const menuItem = [
   {
     id: 2,
     label: "App",
-    href: "https://catchment.staging.maphq.co.nz",
+    href: "https://catchment.maphq.co.nz",
   },
   {
     id: 3,
@@ -145,7 +145,7 @@ export function SiteHeader() {
             </Link>
             <Link
               className="text-md group flex space-x-4 group-hover:underline"
-              href="https://catchment.staging.maphq.co.nz/"
+              href="https://catchment.maphq.co.nz"
               target="_blank"
               rel="noopener"
             >
@@ -196,7 +196,7 @@ export function SiteHeader() {
               <motion.li
                 variants={mobileLinkVar}
                 key={item.id}
-                className="py-0.5 pl-6"
+                className="py-0.5 pl-8"
               >
                 <Link
                   className={`hover:text-grey text-md flex h-[var(--navigation-height)] w-full items-center transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${

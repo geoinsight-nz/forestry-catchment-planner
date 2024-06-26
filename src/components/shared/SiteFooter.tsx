@@ -5,7 +5,7 @@ const footerNavs = [
     label: "Product",
     items: [
       {
-        href: "https://catchment.staging.maphq.co.nz",
+        href: "https://catchment.maphq.co.nz/",
         name: "Application",
       },
       {
@@ -39,21 +39,22 @@ const footerNavs = [
       },
     ],
   },
-  {
-    label: "Imprint",
-    items: [
-      {
-        href: "#",
-        name: "Terms",
-      },
-
-      {
-        href: "#",
-        name: "Privacy",
-      },
-    ],
-  },
 ];
+
+const legalNav = {
+  label: "Imprint",
+  items: [
+    {
+      href: "#",
+      name: "Terms",
+    },
+
+    {
+      href: "#",
+      name: "Privacy",
+    },
+  ],
+};
 
 export function SiteFooter() {
   return (
