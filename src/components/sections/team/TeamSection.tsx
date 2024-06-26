@@ -1,4 +1,11 @@
 import TeamMemberCard from "@/components/sections/team/TeamMemberCard";
+import andrewHoldaway from "/public/images/team/andrew_holdaway.png";
+import blaineWestern from "/public/images/team/blaine_western.png";
+import brendaRosser from "/public/images/team/brenda_rosser.png";
+import markBloomberg from "/public/images/team/mark_bloomberg.png";
+import markSpencer from "/public/images/team/mark_spencer.png";
+import peteWatt from "/public/images/team/pete_watt.png";
+import robBesaans from "/public/images/team/rob_besaans.png";
 
 const team = [
   {
@@ -6,7 +13,7 @@ const team = [
     role: "Science Lead",
     instition: "GNS Science",
     id: "brenda-rosser",
-    image: "/images/team/brenda_rosser.png",
+    image: brendaRosser,
   },
   {
     name: "Mark Bloomberg",
@@ -14,7 +21,7 @@ const team = [
     instition:
       "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
     id: "mark-bloomberg",
-    image: "/images/team/mark_bloomberg.png",
+    image: markBloomberg,
   },
   {
     name: "Andrew Holdaway",
@@ -22,45 +29,47 @@ const team = [
     instition:
       "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
     id: "andrew-holdaway",
-    image: "/images/team/andrew_holdaway.png",
+    image: andrewHoldaway,
   },
   {
     name: "Pete Watt",
     role: "Head Of Resource Monitoring",
     instition: "Indufor",
     id: "pete-watt",
-    image: "/images/team/pete_watt.png",
+    image: peteWatt,
   },
   {
     name: "Blaine Western",
     role: "Head of Design and Interaction",
     instition: "GeoInsight",
     id: "blaine-western",
-    image: "/images/team/blaine_western.png",
+    image: blaineWestern,
   },
   {
     name: "Mark Spencer",
     role: "Director, Operations Manager",
     instition: "GeoInsight",
     id: "mark-spencer",
-    image: "/images/team/mark_spencer.png",
+    image: markSpencer,
   },
   {
     name: "Rob Besaans",
     role: "Director, Geospatial & Software Lead",
     instition: "GeoInsight",
     id: "rob-besaans",
-    image: "/images/team/rob_besaans.png",
+    image: robBesaans,
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="flex h-full min-h-screen flex-col gap-12 bg-background px-6 py-20 dark:bg-brand-50">
-      <h1 className="text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-inverted-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-        Team
-      </h1>
-      <div className="grid grid-flow-row grid-cols-5 gap-x-2 gap-y-32">
+    <section className="flex h-full min-h-screen flex-col bg-background p-6 dark:bg-brand-50">
+      <header className="mb-[40px]">
+        <h2 className="text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-inverted-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+          Team
+        </h2>
+      </header>
+      <div className="grid-cols-auto-fit-240 grid h-full gap-x-2 gap-y-32">
         {team.map((member) => (
           <div key={member.id} className="col-span-1 w-auto">
             <TeamMemberCard
@@ -73,6 +82,7 @@ export default function TeamSection() {
           </div>
         ))}
       </div>
+      <div className="h-12" />
     </section>
   );
 }

@@ -62,9 +62,9 @@ export function SiteFooter() {
         <div className="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
             <Link
-                          href="https://catchment.staging.maphq.co.nz"
-                          target="_blank"
-                          rel="noopener"
+              href="https://catchment.staging.maphq.co.nz"
+              target="_blank"
+              rel="noopener"
               className="flex items-center gap-2"
             >
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
@@ -113,7 +113,5 @@ export function SiteFooter() {
 }
 
 function Credits() {
-    return (
-        <div>Credits</div>
-    )
+  return <div>Credits</div>;
 }

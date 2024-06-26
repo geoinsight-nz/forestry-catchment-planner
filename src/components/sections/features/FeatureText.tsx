@@ -1,5 +1,6 @@
 "use client";
 
+import { Prose } from "@/components/mdx/Prose";
 import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
 import { useInView } from "framer-motion";
@@ -24,7 +25,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
   }, [isInView, id, setInViewFeature, inViewFeature]);
 
   return (
-    <div className="py-16">
+    <Prose className="py-16">
       <h2
         className={cn(
           "text-2xl font-bold transition-colors text-foreground dark:text-foregound",
@@ -40,6 +41,6 @@ export const FeatureText = ({ id, title, body }: Props) => {
       >
         {body}
       </p>
-    </div>
+    </Prose>
   );
 };

@@ -41,8 +41,8 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="min-h-screen bg-background py-20 px-6">
-      <h1 className="sticky top-0 py-16 w-fit text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+    <section className="min-h-screen bg-background p-6">
+      <h1 className="sticky top-0 py-12 w-fit text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
         Partners
       </h1>
       <div className="flex h-full items-center justify-end">

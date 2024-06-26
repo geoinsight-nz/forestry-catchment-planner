@@ -22,7 +22,7 @@ const components = {
       HTMLAttributes<HTMLHeadingElement>,
   ) => (
     <Prose className="mx-auto">
-      <p className="mb-12 translate-y-[-1rem] animate-fade-in text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-lg">
+      <p className="translate-y-[-1rem] animate-fade-in text-balance text-base tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms]">
         {props.children}
       </p>
     </Prose>

@@ -36,7 +36,7 @@ const config = {
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
-    typography: typographyStyles,
+    // typography: typographyStyles,
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
@@ -105,8 +105,10 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       gridTemplateColumns: {
-        "auto-fit-300": "repeat(auto-fit, minmax(300px, 1fr))",
-        "auto-fill-300": "repeat(auto-fill, minmax(300px, 1fr))",
+        "auto-fit-200": "repeat(auto-fit, minmax(200px, 1fr))",
+        "auto-fit-240": "repeat(auto-fit, minmax(240px, 1fr))",
+        "auto-fit-280": "repeat(auto-fit, minmax(280px, 1fr))",
+        "auto-fill-320": "repeat(auto-fit, minmax(320px, auto))",
         "16": "repeat(16, minmax(0, 1fr))",
         "24": "repeat(24, minmax(0, 1fr))",
       },
