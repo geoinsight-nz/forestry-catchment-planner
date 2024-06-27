@@ -5,7 +5,7 @@ import regions from "/public/images/visualisations/nz_regions_dark.png";
 export default function Regions() {
   return (
     <section id="intro" className="flex items-center justify-center">
-      <div className="mx-6 grid max-w-[32rem] grid-cols-1 rounded-sm bg-brand-700 dark:bg-brand-700 md:max-w-[68rem] md:grid-cols-2">
+      <div className="mx-6 grid max-w-[32rem] grid-cols-1 rounded-sm bg-brand-900 dark:bg-brand-700 md:max-w-[68rem] md:grid-cols-2">
         <div className="flex aspect-auto h-fit flex-col justify-center px-6 py-6 md:aspect-square md:h-full md:py-0">
           <header className="mb-6">
             <h2 className="text-balance text-xl font-medium text-primary-foreground dark:text-foreground lg:text-3xl">
@@ -37,7 +37,7 @@ export default function Regions() {
             alt=""
             fill
             sizes="100vw"
-            className="h-full dark:bg-brand-50 bg-brand-950 w-auto rounded-sm object-contain p-12"
+            className="h-full dark:bg-brand-800 bg-brand-800 w-auto rounded-sm object-contain p-12"
           />
         </div>
       </div>

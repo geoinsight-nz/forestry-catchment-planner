@@ -4,21 +4,21 @@ export default function ScienceSection() {
   return (
     <section
       id="science"
-      className="h-full min-h-screen w-full bg-background p-6"
+      className="h-full min-h-screen w-full bg-brand-900 p-6 dark:bg-brand-950"
     >
-      <header className="mb-[80px] max-w-[50vw]">
-        <h2 className="text-balance text-3xl font-medium tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+      <header className="mb-[80px]">
+        <h2 className="text-balance text-3xl font-medium text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
           Key questions
         </h2>
       </header>
       <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] sm:grid-cols-2 lg:pl-[24vw]">
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <LocationIcon className="size-8" />
-          <h3 className="text-xl text-foreground">
+          <LocationIcon className="size-8 text-brand-50 dark:text-brand-50" />
+          <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Forest Location and Age Classification
           </h3>
           <Prose>
-            <p className="text-base">
+            <p className="text-base text-brand-50 dark:text-brand-50">
               Where are the exotic forests located across Te Tauihu, Te
               Matau-a-Māui, and Tairāwhiti, and how can we classify them by age
               to identify maturing forests?
@@ -26,12 +26,12 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <AdjustmentsIcon className="size-8" />
-          <h3 className="text-xl text-foreground">
+          <AdjustmentsIcon className="size-8 text-brand-50 dark:text-brand-50" />
+          <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Visualizing Clearfell Harvesting Regions
           </h3>
           <Prose>
-            <p className="text-base">
+            <p className="text-base text-brand-50 dark:text-brand-50">
               How can we visualize regions and catchments where significant
               clearfell harvesting is anticipated, and assess the associated
               risks for potential mass erosion?
@@ -39,12 +39,12 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <TreesIcon className="size-8" />
-          <h3 className="text-xl text-foreground">
+          <TreesIcon className="size-8 text-brand-50 dark:text-brand-50" />
+          <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Landslide Vulnerability and Debris Flow Prediction
           </h3>
           <Prose>
-            <p className="text-base">
+            <p className="text-base text-brand-50 dark:text-brand-50">
               Can we identify areas approaching harvest and classify the
               vulnerability of the underlying land to landslides, as well as
               predict the probability of debris flows in the context of large
@@ -53,12 +53,12 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <BoxesIcon className="size-8" />
-          <h3 className="text-xl text-foreground">
+          <BoxesIcon className="size-8 text-brand-50 dark:text-brand-50" />
+          <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Managing Intergenerational Risks in Forestry
           </h3>
           <Prose>
-            <p className="text-base">
+            <p className="text-base text-brand-50 dark:text-brand-50">
               How do we understand and manage the intergenerational risks
               arising from the overlap of forestry harvesting cycles and extreme
               weather events?
@@ -66,10 +66,12 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <div className="flex h-[22rem] w-80 flex-col gap-y-6">
-          <SproutIcon className="size-8" />
-          <h3 className="text-xl text-foreground">Empowering Tangata Whenua</h3>
+          <SproutIcon className="size-8 text-brand-50 dark:text-brand-50" />
+          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+            Empowering Tangata Whenua
+          </h3>
           <Prose>
-            <p className="text-base">
+            <p className="text-base text-brand-50 dark:text-brand-50">
               What measures can empower tangata whenua to protect cultural
               heritage while promoting holistic land use thinking and proactive
               catchment planning?
