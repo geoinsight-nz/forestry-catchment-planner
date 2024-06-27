@@ -26,8 +26,7 @@ const team = [
   {
     name: "Andrew Holdaway",
     role: "Adjunct Senior Fellow",
-    instition:
-      "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
+    instition: "Indufor",
     id: "andrew-holdaway",
     image: andrewHoldaway,
   },
@@ -69,7 +68,7 @@ export default function TeamSection() {
           Team
         </h2>
       </header>
-      <div className="grid-cols-auto-fit-240 grid h-full gap-x-2 gap-y-32">
+      <div className="grid h-full grid-cols-auto-fit-240 gap-x-2 gap-y-32">
         {team.map((member) => (
           <div key={member.id} className="col-span-1 w-auto">
             <TeamMemberCard
