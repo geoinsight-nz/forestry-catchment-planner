@@ -11,8 +11,8 @@ export default function ScienceSection() {
           Key questions
         </h2>
       </header>
-      <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] sm:grid-cols-2 lg:pl-[24vw]">
-        <aside className="flex h-80 w-80 flex-col gap-y-6">
+      <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] md:grid-cols-2 lg:pl-[24vw]">
+        <aside className="flex h-80 w-full md:w-80 flex-col gap-y-6">
           <LocationIcon className="size-8 text-brand-50 dark:text-brand-50" />
           <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Forest Location and Age Classification
@@ -25,7 +25,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <aside className="flex h-80 w-80 flex-col gap-y-6">
+        <aside className="flex h-80  w-full md:w-80 flex-col gap-y-6">
           <AdjustmentsIcon className="size-8 text-brand-50 dark:text-brand-50" />
           <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Visualizing Clearfell Harvesting Regions
@@ -38,7 +38,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <aside className="flex h-80 w-80 flex-col gap-y-6">
+        <aside className="flex h-80  w-full md:w-80 flex-col gap-y-6">
           <TreesIcon className="size-8 text-brand-50 dark:text-brand-50" />
           <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Landslide Vulnerability and Debris Flow Prediction
@@ -52,7 +52,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <aside className="flex h-80 w-80 flex-col gap-y-6">
+        <aside className="flex h-80  w-full md:w-80 flex-col gap-y-6">
           <BoxesIcon className="size-8 text-brand-50 dark:text-brand-50" />
           <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Managing Intergenerational Risks in Forestry
@@ -65,7 +65,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <div className="flex h-[22rem] w-80 flex-col gap-y-6">
+        <div className="flex h-[22rem]  w-full md:w-80 flex-col gap-y-6">
           <SproutIcon className="size-8 text-brand-50 dark:text-brand-50" />
           <h3 className="text-xl text-brand-50 dark:text-brand-50">
             Empowering Tangata Whenua

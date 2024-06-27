@@ -25,7 +25,7 @@ export default function Hero() {
           src={ipad}
           alt="iPad"
           sizes="100vw"
-          className="absolute bottom-0 right-0 max-w-[30vw] sm:translate-x-[8rem] translate-y-[0.5rem] sm:translate-y-[1.5rem] brightness-95"
+          className="absolute bottom-0 right-0 max-w-[32vw] translate-x-[2rem] px-4 brightness-95 md:max-w-[24vw]"
         />
       </div>
     </div>
