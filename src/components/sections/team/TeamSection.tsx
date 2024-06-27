@@ -25,7 +25,7 @@ const team = [
   },
   {
     name: "Andrew Holdaway",
-    role: "Adjunct Senior Fellow",
+    role: "Geospatial Application Specialist",
     instition: "Indufor",
     id: "andrew-holdaway",
     image: andrewHoldaway,
