@@ -6,13 +6,12 @@ import HeroText from "./HeroText";
 
 export default async function HeroSection() {
   return (
-    <section
-      id="hero"
-      className="relative h-full w-full mx-auto mt-24 max-w-[80rem] px-6 mb-24 text-center"
-    >
-      <VersionBadge />
-      <HeroText />
-      <Hero />
+    <section id="hero" className="relative h-full w-full px-6 text-center">
+      <div className="mx-auto mb-24 mt-24 max-w-[80rem]">
+        <VersionBadge />
+        <HeroText />
+        <Hero />
+      </div>
     </section>
   );
 }

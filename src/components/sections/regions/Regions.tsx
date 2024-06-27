@@ -9,7 +9,7 @@ export default function Regions() {
         <div className="flex aspect-auto h-fit flex-col justify-center px-6 py-6 md:aspect-square md:h-full md:py-0">
           <header className="mb-6">
             <h2 className="text-balance text-xl font-medium text-primary-foreground dark:text-foreground lg:text-3xl">
-              Study areas
+              Regions
             </h2>
           </header>
           <article className="flex flex-col">
@@ -37,7 +37,7 @@ export default function Regions() {
             alt=""
             fill
             sizes="100vw"
-            className="h-full bg-brand-950 w-auto rounded-sm object-contain p-12"
+            className="h-full dark:bg-brand-50 bg-brand-950 w-auto rounded-sm object-contain p-12"
           />
         </div>
       </div>

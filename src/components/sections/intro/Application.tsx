@@ -5,7 +5,7 @@ import trees from "/public/images/forests/forest_trees_duotone.png";
 export default function Application() {
   return (
     <section id="intro" className="flex items-center justify-center">
-      <div className="mx-6 grid max-w-[32rem] grid-cols-1 rounded-sm bg-brand-700 dark:bg-brand-700 md:max-w-[68rem] md:grid-cols-2">
+      <div className="mx-6 grid max-w-[32rem] grid-cols-1 rounded-sm bg-brand-900 dark:bg-brand-700 md:max-w-[68rem] md:grid-cols-2">
         <div className="flex aspect-auto h-fit flex-col justify-center px-6 py-6 md:aspect-square md:h-full md:py-0">
           <header className="mb-6">
             <h2 className="text-balance text-xl font-medium text-primary-foreground dark:text-foreground lg:text-3xl">

@@ -29,17 +29,17 @@ export default function TeamMemberCard({
       </div>
       <div className="flex h-fit flex-col items-start justify-start pt-3">
         <Prose>
-          <h3 className="text-lg font-medium text-foreground dark:text-inverted-foreground">
+          <h3 className="text-lg font-medium text-brand-950 dark:text-brand-50">
             {name}
           </h3>
           <span className="m-0 flex flex-col gap-0 p-0">
             {role && (
-              <p className="m-0 p-0 text-xs font-normal text-foreground dark:text-inverted-foreground">
+              <p className="m-0 p-0 text-xs font-normal text-brand-950 dark:text-brand-50">
                 {role}
               </p>
             )}
             {instition && (
-              <p className="m-0 p-0 text-xs font-normal text-foreground dark:text-inverted-foreground">
+              <p className="m-0 p-0 text-xs font-normal text-brand-950 dark:text-brand-50">
                 {instition}
               </p>
             )}

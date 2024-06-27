@@ -31,20 +31,20 @@ const partners = [
   {
     id: "indufor",
     title: "Indufor",
-    about: "Indufor's resource monitoring team is part of Indufor Group, a leading forest sector consulting firm that provides high-quality analysis to forest growers, investors, and government agencies. The monitoring team specialises in creating insights from remote sensing technologies to enhance management and investment decisions.",
+    about:
+      "Indufor's resource monitoring team is part of Indufor Group, a leading forest sector consulting firm that provides high-quality analysis to forest growers, investors, and government agencies. The monitoring team specialises in creating insights from remote sensing technologies to enhance management and investment decisions.",
     body: "Indufor's role in the project was to calculate forest stand ages and map the spatial extent of the forest stands across Te Tauihu (Top of the South Island), Te Matau-a-Māui (Hawkes Bay), and Tairāwhiti (Gisborne).",
     src: "indufor.png",
     color: "#000000",
   },
 ];
 
-
 export default function PartnersSection() {
   return (
     <section className="min-h-screen bg-background p-6">
-      <h1 className="sticky top-0 py-12 w-fit text-3xl font-medium leading-none tracking-tighter text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+      <h2 className="sticky top-0 w-fit py-12 text-3xl font-medium text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
         Partners
-      </h1>
+      </h2>
       <div className="flex h-full items-center justify-end">
         <div className="flex w-3/4 flex-col items-center justify-center">
           {partners.map((partner) => {
