@@ -36,7 +36,6 @@ const config = {
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
-    // typography: typographyStyles,
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],

@@ -8,7 +8,7 @@ export default async function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full mx-auto mt-24 max-w-[80rem] px-6 pb-16 text-center md:px-8"
+      className="relative h-full w-full mx-auto mt-24 max-w-[80rem] px-6 mb-24 text-center"
     >
       <VersionBadge />
       <HeroText />
