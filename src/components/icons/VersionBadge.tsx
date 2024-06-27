@@ -10,7 +10,7 @@ export default function VersionBadge() {
           target="_blank"
           rel="noopener"
         >
-          Forestry Catchment Planner v.01 release
+          Forestry Catchment Planner v1.0 release
         </a>{" "}
         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
       </TextShimmer>

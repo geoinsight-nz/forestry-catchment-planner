@@ -13,7 +13,7 @@ export default function ScienceSection() {
       </header>
       <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] sm:grid-cols-2 lg:pl-[24vw]">
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <LocationIcon />
+          <LocationIcon className="size-8" />
           <h3 className="text-xl text-foreground">
             Forest Location and Age Classification
           </h3>
@@ -26,7 +26,7 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <AdjustmentsIcon />
+          <AdjustmentsIcon className="size-8" />
           <h3 className="text-xl text-foreground">
             Visualizing Clearfell Harvesting Regions
           </h3>
@@ -39,7 +39,7 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <TreesIcon />
+          <TreesIcon className="size-8" />
           <h3 className="text-xl text-foreground">
             Landslide Vulnerability and Debris Flow Prediction
           </h3>
@@ -53,7 +53,7 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <aside className="flex h-80 w-80 flex-col gap-y-6">
-          <ComputerIcon />
+          <BoxesIcon className="size-8" />
           <h3 className="text-xl text-foreground">
             Managing Intergenerational Risks in Forestry
           </h3>
@@ -66,7 +66,7 @@ export default function ScienceSection() {
           </Prose>
         </aside>
         <div className="flex h-[22rem] w-80 flex-col gap-y-6">
-          <RainbowIcon />
+          <SproutIcon className="size-8" />
           <h3 className="text-xl text-foreground">Empowering Tangata Whenua</h3>
           <Prose>
             <p className="text-base">
@@ -145,7 +145,7 @@ function TreesIcon(props: React.ComponentPropsWithoutRef<"svg">) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="1"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
       className="lucide lucide-trees"
@@ -159,7 +159,7 @@ function TreesIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   );
 }
 
-function RainbowIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+function SproutIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -168,15 +168,47 @@ function RainbowIcon(props: React.ComponentPropsWithoutRef<"svg">) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="1"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      className="lucide lucide-rainbow"
+      className="lucide lucide-sprout"
       {...props}
     >
-      <path d="M22 17a10 10 0 0 0-20 0" />
-      <path d="M6 17a6 6 0 0 1 12 0" />
-      <path d="M10 17a2 2 0 0 1 4 0" />
+      <path d="M7 20h10" />
+      <path d="M10 20c5.5-2.5.8-6.4 3-10" />
+      <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
+      <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
+    </svg>
+  );
+}
+
+function BoxesIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="lucide lucide-boxes"
+      {...props}
+    >
+      <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
+      <path d="m7 16.5-4.74-2.85" />
+      <path d="m7 16.5 5-3" />
+      <path d="M7 16.5v5.17" />
+      <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" />
+      <path d="m17 16.5-5-3" />
+      <path d="m17 16.5 4.74-2.85" />
+      <path d="M17 16.5v5.17" />
+      <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" />
+      <path d="M12 8 7.26 5.15" />
+      <path d="m12 8 4.74-2.85" />
+      <path d="M12 13.5V8" />
     </svg>
   );
 }
