@@ -11,7 +11,7 @@ const features = [
   },
   {
     title: "Evolving Hazard Visualisation",
-    body: "Understand the hazards forecast for with different catchment areas, such as landslide suscpetiblity and Melton Ratio.",
+    body: "Understand the hazards forecast for different catchment areas, such as landslide suscpetiblity and Melton Ratio.",
     id: "hazard",
     image: "/images/visualisations/landslide_susceptibility.png",
     caption: "Landslide susceptibility.",
