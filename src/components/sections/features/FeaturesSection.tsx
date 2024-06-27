@@ -4,28 +4,28 @@ import FeatureCard from "./FeatureCard";
 const features = [
   {
     title: "Simulate and Analyse",
-    body: "Users can view geographic data and simulate the effects of clear-felling on catchment areas, measured as Catchment Management Units.",
+    body: "View geographic data and simulate the effects of clearfelling on catchment areas, measured as Catchment Management Units.",
     id: "simulate",
     image: "/images/visualisations/erosion_susceptibility.png",
     caption: "Erosion susceptibility.",
   },
   {
     title: "Evolving Hazard Visualisation",
-    body: "Understand the evolving hazards associated with forestry activities in different catchment areas.",
+    body: "Understand the hazards forecast for with different catchment areas, such as landslide suscpetiblity and Melton Ratio.",
     id: "hazard",
     image: "/images/visualisations/landslide_susceptibility.png",
     caption: "Landslide susceptibility.",
   },
   {
     title: "Consistent Baseline Data",
-    body: "See a consistent and accurate baseline of plantation stand age, used as a proxy for likely harvesting activity.",
+    body: "Work with a consistent and accurate baseline of plantation stand age, used as a proxy for likely harvesting activity.",
     id: "data",
     image: "/images/visualisations/hill_slope_units.png",
     caption: "Hillslope units.",
   },
   {
     title: "Visual Data Tools",
-    body: "Utilise a time slider and heat mapping to highlight critical catchments and forested areas needing greater attention and better management focus.",
+    body: "Utilise a time slider and highlight catchments within the window of vulnerabilty during a given period to identify forested areas needing attention and management focus.",
     id: "tools",
     image: "/images/visualisations/melton_ratios.png",
     caption: "Melton ratios.",
