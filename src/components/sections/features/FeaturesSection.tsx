@@ -1,5 +1,6 @@
 import { FeatureText } from "@/components/sections/features/FeatureText";
 import Image from "next/image";
+import { Fragment } from "react";
 import FeatureCard from "./FeatureCard";
 
 const features = [
@@ -43,7 +44,7 @@ export default function FeaturesSection() {
           </h2>
           <ul>
             {features.map((feature) => (
-              <>
+              <Fragment key={feature.id}>
                 <figure className="relative flex h-[56vw] w-auto flex-col gap-4 lg:hidden">
                   <Image
                     src={feature.image}
@@ -60,7 +61,7 @@ export default function FeaturesSection() {
                     body={feature.body}
                   />
                 </li>
-              </>
+              </Fragment>
             ))}
           </ul>
         </div>
