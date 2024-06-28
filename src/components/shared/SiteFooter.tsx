@@ -72,8 +72,8 @@ export function SiteFooter() {
                 Forestry Catchment Planner
               </span>
             </Link>
-            <p className="max-w-xs">
-              Proactive forest management for the future, today.
+            <p className="max-w-sm">
+              Proactive forest management for the future.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
