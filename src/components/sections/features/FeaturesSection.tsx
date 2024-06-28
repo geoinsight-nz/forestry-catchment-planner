@@ -6,7 +6,7 @@ const features = [
     title: "Simulate and Analyse",
     body: "View geographic data and simulate the effects of clearfelling on catchment areas, measured as Catchment Management Units.",
     id: "simulate",
-    image: "/images/visualisations/erosion_susceptibility.png",
+    image: "/images/visualisations/catchments.png",
     caption: "Erosion susceptibility.",
   },
   {
@@ -20,7 +20,7 @@ const features = [
     title: "Consistent Baseline Data",
     body: "Work with a consistent and accurate baseline of plantation stand age, used as a proxy for likely harvesting activity.",
     id: "data",
-    image: "/images/visualisations/hill_slope_units.png",
+    image: "/images/visualisations/erosion_susceptibility.png",
     caption: "Hillslope units.",
   },
   {
