@@ -28,7 +28,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
     <Prose className="py-16">
       <h2
         className={cn(
-          "text-2xl font-bold transition-colors text-foreground dark:text-foregound",
+          "text-balance text-xl font-medium text-brand-950 transition-colors dark:text-brand-50 lg:text-3xl",
         )}
       >
         {title}
@@ -36,7 +36,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
       <p
         ref={ref}
         className={cn(
-          "pt-6 text-2xl transition-colors text-foreground dark:text-foregound",
+          "pt-6 text-sm font-normal text-brand-950 transition-colors dark:text-brand-50 lg:text-base",
         )}
       >
         {body}

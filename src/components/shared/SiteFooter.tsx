@@ -68,12 +68,12 @@ export function SiteFooter() {
               rel="noopener"
               className="flex items-center gap-2"
             >
-              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+              <span className="self-center text-2xl font-semibold dark:text-white">
                 Forestry Catchment Planner
               </span>
             </Link>
             <p className="max-w-xs">
-              Proactive forest management for the future.
+              Proactive forest management for the future, today.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">

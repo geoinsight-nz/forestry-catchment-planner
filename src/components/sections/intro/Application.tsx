@@ -20,7 +20,7 @@ export default function Application() {
                 harvesting cycles on a catchment scale.
               </p>
               <p className="text-balance text-sm font-normal text-primary-foreground dark:text-foreground lg:text-base">
-                The tool provides comprehensive insights into forestry stand
+                The tool provides insights into forestry stand
                 locations, recent harvests, and data on erosion susceptibility
                 hazard for future harvesting schedules.
               </p>

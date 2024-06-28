@@ -95,6 +95,7 @@ export function SiteHeader() {
     }
   });
 
+  // Lock scroll
   useEffect(() => {
     const html = document.querySelector("html");
     if (html) html.classList.toggle("overflow-hidden", hamburgerMenuIsOpen);
@@ -141,7 +142,9 @@ export function SiteHeader() {
               rel="noopener"
             >
               <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
-              <h2 className="text-md group-hover:underline">Documentation</h2>
+              <h2 className="text-md text-brand-900 transition delay-150 group-hover:underline dark:text-foreground">
+                Documentation
+              </h2>
             </Link>
             <Link
               className="text-md group flex space-x-4 group-hover:underline"
@@ -150,7 +153,9 @@ export function SiteHeader() {
               rel="noopener"
             >
               <MapIcon className="size-6 text-brand-900 dark:text-foreground" />
-              <h2 className="text-md group-hover:underline">Open app</h2>
+              <h2 className="text-md text-brand-900 transition delay-150 group-hover:underline dark:text-foreground">
+                Open app
+              </h2>
             </Link>
           </div>
           <button

@@ -37,7 +37,7 @@ export default function FeaturesSection() {
     <section className="min-h-screen bg-background dark:bg-zinc-900">
       <div className="flex w-full items-start gap-20 p-8">
         <div className="flex w-full flex-col gap-32 pb-[50vh]">
-          <h2 className="text-3xl font-medium sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-medium text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Visualising Forestry Harvesting Cycles
           </h2>
           <ul>
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
             ))}
           </ul>
         </div>
-        <div className="sticky top-0 flex h-screen w-full items-center">
+        <div className="hidden h-screen w-full items-center lg:sticky lg:top-0 lg:flex">
           <div className="relative aspect-square w-full rounded-sm">
             {features.map((feature) => (
               <FeatureCard

@@ -42,11 +42,11 @@ const partners = [
 export default function PartnersSection() {
   return (
     <section className="min-h-screen bg-background p-6">
-      <h2 className="sticky top-0 w-fit py-12 text-3xl font-medium text-foreground dark:text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
+      <h2 className="w-fit text-balance py-12 text-3xl font-medium text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:sticky lg:top-0 lg:text-6xl">
         Partners
       </h2>
       <div className="flex h-full items-center justify-end">
-        <div className="flex w-3/4 flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center lg:w-3/4">
           {partners.map((partner) => {
             return (
               <Partner
