@@ -1,14 +1,12 @@
 import { SiteFooter } from "@/components/shared/SiteFooter";
 import "@/styles/globals.css";
-import localFont from "next/font/local";
 import { type Metadata } from "next";
+import localFont from "next/font/local";
 
-import ReferenceGrid from "@/components/utilities/ReferenceGrid";
 import { SiteHeader } from "@/components/shared/SiteHeader";
-import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { cn } from "@/lib/utils";
-import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.forestrycatchmentplanner.nz"),
@@ -63,11 +61,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(
-        "min-h-screen font-sans antialiased",
-        inter.variable,
-        GeistSans.variable,
-      )}
+      className={cn("min-h-screen font-sans antialiased", inter.variable)}
       suppressHydrationWarning
     >
       <body className="antialiased">
@@ -81,7 +75,6 @@ export default function RootLayout({
           {children}
           <SiteFooter />
           <Toaster />
-          <ReferenceGrid />
         </ThemeProvider>
       </body>
     </html>
