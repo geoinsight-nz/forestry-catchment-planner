@@ -5,12 +5,12 @@ const footerNavs = [
     label: "Product",
     items: [
       {
-        href: "https://catchment.maphq.co.nz/",
-        name: "Application",
-      },
-      {
         href: "https://www.docs.forestrycatchmentplanner.nz",
         name: "Documentation",
+      },
+      {
+        href: "https://catchment.maphq.co.nz/",
+        name: "Application",
       },
       {
         href: "mailto:info@geoinsight.co.nz",
