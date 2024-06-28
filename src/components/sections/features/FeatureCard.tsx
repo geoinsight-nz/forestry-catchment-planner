@@ -3,11 +3,11 @@
 
 import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 type FeatureCardProps = {
   id: string;
-  image: string;
+  image: StaticImageData;
   caption: string;
 };
 
@@ -25,6 +25,7 @@ export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
           src={image}
           alt="Forestry Catchment Planner feature"
           fill
+          placeholder="blur"
           className="h-full w-full rounded-sm object-contain"
           unoptimized
         />

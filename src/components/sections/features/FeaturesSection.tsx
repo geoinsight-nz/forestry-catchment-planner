@@ -2,34 +2,38 @@ import { FeatureText } from "@/components/sections/features/FeatureText";
 import Image from "next/image";
 import { Fragment } from "react";
 import FeatureCard from "./FeatureCard";
+import macVisualise from "/public/images/mockups/mac_pro_3.png";
+import macBaseline from "/public/images/mockups/mac_pro_4.png";
+import macTools from "/public/images/mockups/mac_pro_5.png";
+import macSimulate from "/public/images/mockups/mac_pro_6.png";
 
 const features = [
   {
     title: "Simulate and Analyse",
     body: "View geographic data and simulate the effects of clearfelling on catchment areas, measured as Catchment Management Units.",
     id: "simulate",
-    image: "/images/mockups/mac_pro_6.png",
+    image: macSimulate,
     caption: "Erosion susceptibility.",
   },
   {
     title: "Evolving Hazard Visualisation",
     body: "Understand the hazards forecast for different catchment areas, such as landslide suscpetiblity and Melton Ratio.",
     id: "hazard",
-    image: "/images/mockups/mac_pro_3.png",
+    image: macVisualise,
     caption: "Landslide susceptibility.",
   },
   {
     title: "Consistent Baseline Data",
     body: "Work with a consistent and accurate baseline of plantation stand age, used as a proxy for likely harvesting activity.",
     id: "data",
-    image: "/images/mockups/mac_pro_4.png",
+    image: macBaseline,
     caption: "Hillslope units.",
   },
   {
     title: "Visual Data Tools",
     body: "Utilise a time slider and highlight catchments within the window of vulnerabilty during a given period to identify forested areas needing attention and management focus.",
     id: "tools",
-    image: "/images/mockups/mac_pro_5.png",
+    image: macTools,
     caption: "Melton ratios.",
   },
 ];
@@ -50,6 +54,7 @@ export default function FeaturesSection() {
                     src={feature.image}
                     alt="Forestry Catchment Planner feature"
                     fill
+                    placeholder="blur"
                     className="h-full w-auto rounded-sm object-contain"
                     unoptimized
                   />

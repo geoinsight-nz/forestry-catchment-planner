@@ -13,19 +13,22 @@ export default function Hero() {
           src={mac}
           alt="FCP"
           sizes="100vw"
+          priority
           className="relative hidden h-auto w-full rounded-[inherit] object-contain dark:block"
         />
         <Image
           src={mac}
           alt="FCP"
           sizes="100vw"
+          priority
           className="relative block h-auto w-full rounded-[inherit] object-contain dark:hidden"
         />
         <Image
           src={ipad}
           alt="iPad"
           sizes="100vw"
-          className="absolute bottom-0 h-auto right-0 max-w-[32vw] translate-x-[2rem] px-4 brightness-95 md:max-w-[24vw]"
+          priority
+          className="absolute bottom-0 right-0 h-auto max-w-[32vw] translate-x-[2rem] px-4 brightness-95 md:max-w-[24vw]"
         />
       </div>
     </div>
