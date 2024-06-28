@@ -24,7 +24,7 @@ const menuItem = [
   },
   {
     id: 2,
-    label: "App",
+    label: "Application",
     href: "https://catchment.maphq.co.nz",
   },
   {
