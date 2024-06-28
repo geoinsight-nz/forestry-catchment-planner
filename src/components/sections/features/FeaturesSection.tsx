@@ -1,4 +1,5 @@
 import { FeatureText } from "@/components/sections/features/FeatureText";
+import Image from "next/image";
 import FeatureCard from "./FeatureCard";
 
 const features = [
@@ -42,13 +43,24 @@ export default function FeaturesSection() {
           </h2>
           <ul>
             {features.map((feature) => (
-              <li key={feature.id}>
-                <FeatureText
-                  id={feature.id}
-                  title={feature.title}
-                  body={feature.body}
-                />
-              </li>
+              <>
+                <figure className="relative flex h-[56vw] w-auto flex-col gap-4 lg:hidden">
+                  <Image
+                    src={feature.image}
+                    alt="Forestry Catchment Planner feature"
+                    fill
+                    className="h-full w-auto rounded-sm object-contain"
+                    unoptimized
+                  />
+                </figure>
+                <li key={feature.id}>
+                  <FeatureText
+                    id={feature.id}
+                    title={feature.title}
+                    body={feature.body}
+                  />
+                </li>
+              </>
             ))}
           </ul>
         </div>
