@@ -68,7 +68,7 @@ export default function TeamSection() {
           Team
         </h2>
       </header>
-      <div className="grid h-full grid-cols-auto-fit-240 gap-x-2 gap-y-32">
+      <div className="grid h-full grid-cols-auto-fit-240 gap-x-2 gap-y-16 sm:gap-y-32">
         {team.map((member) => (
           <div key={member.id} className="col-span-1 w-auto">
             <TeamMemberCard
