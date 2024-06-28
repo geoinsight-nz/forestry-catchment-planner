@@ -1,11 +1,11 @@
 import TeamMemberCard from "@/components/sections/team/TeamMemberCard";
-import andrewHoldaway from "/public/images/team/andrew_holdaway.png";
-import blaineWestern from "/public/images/team/blaine_western.png";
-import brendaRosser from "/public/images/team/brenda_rosser.png";
-import markBloomberg from "/public/images/team/mark_bloomberg.png";
-import markSpencer from "/public/images/team/mark_spencer.png";
-import peteWatt from "/public/images/team/pete_watt.png";
-import robBesaans from "/public/images/team/rob_besaans.png";
+import andrewHoldaway from "/public/images/team/andrew_holdaway.jpg";
+import blaineWestern from "/public/images/team/blaine_western.jpg";
+import brendaRosser from "/public/images/team/brenda_rosser.jpg";
+import markBloomberg from "/public/images/team/mark_bloomberg.jpg";
+import markSpencer from "/public/images/team/mark_spencer.jpg";
+import peteWatt from "/public/images/team/pete_watt.jpg";
+import robBesaans from "/public/images/team/rob_besaans.jpg";
 
 const team = [
   {
