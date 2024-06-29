@@ -11,7 +11,7 @@ const components = {
   ) => (
     <h1
       {...props}
-      className="mx-auto translate-y-[-1rem] animate-fade-in text-balance py-6 text-5xl font-medium dark:text-brand-50 text-brand-950 opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl"
+      className="mx-auto translate-y-[-1rem] animate-fade-in text-balance py-6 text-5xl font-bold text-brand-950 opacity-0 [--animation-delay:200ms] dark:text-brand-50 sm:text-6xl md:text-7xl lg:text-8xl"
     >
       {props.children}
     </h1>
@@ -22,7 +22,7 @@ const components = {
       HTMLAttributes<HTMLHeadingElement>,
   ) => (
     <Prose className="mx-auto">
-      <p className="text-brand-950 translate-y-[-1rem] animate-fade-in text-balance text-lg opacity-0 [--animation-delay:400ms] dark:text-secondary-foreground">
+      <p className="translate-y-[-1rem] animate-fade-in text-balance text-lg text-brand-950 opacity-0 [--animation-delay:400ms] dark:text-secondary-foreground">
         {props.children}
       </p>
     </Prose>

@@ -43,7 +43,7 @@ export default function FeaturesSection() {
     <section className="min-h-screen bg-background dark:bg-zinc-900">
       <div className="flex w-full items-start gap-20 p-8">
         <div className="flex w-full flex-col gap-32 lg:pb-[50vh]">
-          <h2 className="text-3xl font-medium text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-bold text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Visualising Forestry Harvesting Cycles
           </h2>
           <ul>

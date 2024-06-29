@@ -79,7 +79,7 @@ export function SiteFooter() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
             {footerNavs.map((nav) => (
               <div key={nav.label}>
-                <h2 className="mb-6 text-sm font-medium uppercase tracking-tighter text-gray-900 dark:text-white">
+                <h2 className="mb-6 text-sm font-bold uppercase tracking-tighter text-gray-900 dark:text-white">
                   {nav.label}
                 </h2>
                 <ul className="grid gap-2">

@@ -15,7 +15,7 @@ export default function ScienceSection() {
       className="h-full min-h-screen w-full bg-brand-900 p-6 dark:bg-brand-950"
     >
       <header className="mb-[80px]">
-        <h2 className="text-balance text-3xl font-medium text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
+        <h2 className="text-balance text-3xl font-bold text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
           Key questions
         </h2>
       </header>
@@ -24,7 +24,7 @@ export default function ScienceSection() {
           <div className="flex gap-x-2">
             <MapPin size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+          <h3 className="text-xl font-bold text-brand-50 dark:text-brand-50">
             Forest Location and Age Classification
           </h3>
           <Prose>
@@ -42,7 +42,7 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+          <h3 className="text-xl font-bold text-brand-50 dark:text-brand-50">
             Visualizing Clearfell Harvesting Regions
           </h3>
           <Prose>
@@ -64,7 +64,7 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+          <h3 className="text-xl font-bold text-brand-50 dark:text-brand-50">
             Landslide Vulnerability and Debris Flow Prediction
           </h3>
           <Prose>
@@ -78,12 +78,9 @@ export default function ScienceSection() {
         </aside>
         <aside className="flex h-80  w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
-            <Plant
-              size={48}
-              className="text-brand-50 dark:text-brand-50"
-            />
+            <Plant size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+          <h3 className="text-xl font-bold text-brand-50 dark:text-brand-50">
             Managing Intergenerational Risks in Forestry
           </h3>
           <Prose>
@@ -101,7 +98,7 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl text-brand-50 dark:text-brand-50">
+          <h3 className="text-xl font-bold text-brand-50 dark:text-brand-50">
             Empowering Tangata Whenua
           </h3>
           <Prose>
