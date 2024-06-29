@@ -76,7 +76,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <aside className="flex h-80  w-full flex-col gap-y-6 md:w-80">
+        <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
             <Plant size={48} className="text-brand-50 dark:text-brand-50" />
           </div>

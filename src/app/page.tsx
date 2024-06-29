@@ -8,7 +8,7 @@ import PartnersSection from "../components/sections/partners/PartnersSection";
 
 export default async function Page() {
   return (
-    <main className="bg-background dark:bg-brand-950">
+    <main className="bg-background dark:bg-brand-950 overflow-x-hidden">
       <HeroSection />
       <IntroSection />
       <ScienceSection />
