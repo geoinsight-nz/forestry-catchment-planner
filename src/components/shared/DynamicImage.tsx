@@ -3,12 +3,15 @@
 import Image, { type ImageProps, type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
-type FigureProps = {
-  caption?: string;
+type DynamicImageProps = {
   srcDark?: StaticImageData;
 } & ImageProps;
 
-export function Figure({ src, srcDark, ...props }: FigureProps) {
+export default function DynamicImage({
+  src,
+  srcDark,
+  ...props
+}: DynamicImageProps) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -27,22 +30,13 @@ export function Figure({ src, srcDark, ...props }: FigureProps) {
   }, []);
 
   const imageSrc = srcDark && isDarkMode ? srcDark : src;
-
   return (
-    <figure className="relative">
       <Image
         src={imageSrc}
         sizes="100vw"
-        className="h-full w-full rounded-sm"
-        placeholder="blur"
+        className={props.className}
         {...props}
         alt={props.alt || ""}
       />
-      {props.caption && (
-        <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-          {props.caption}
-        </figcaption>
-      )}
-    </figure>
   );
 }
