@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `https://www.forestrycatchmentplanner.nz/opengraph-image`,
+        url: `https://www.forestrycatchmentplanner.nz/opengraph-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Forestry Catchment Planner",
