@@ -17,7 +17,7 @@ const features = [
   },
   {
     title: "Evolving Hazard Visualisation",
-    body: "Understand the hazards forecast for different catchment areas, such as landslide suscpetiblity and Melton Ratio.",
+    body: "Understand the hazards forecast for different catchment areas, such as landslide susceptibility and Melton Ratio.",
     id: "hazard",
     image: macVisualise,
     caption: "Landslide susceptibility.",
@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Visual Data Tools",
-    body: "Utilise a time slider and highlight catchments within the window of vulnerabilty during a given period to identify forested areas needing attention and management focus.",
+    body: "Utilise a time slider and highlight catchments within the window of vulnerability during a given period to identify forested areas needing attention and management focus.",
     id: "tools",
     image: macTools,
     caption: "Melton ratios.",
