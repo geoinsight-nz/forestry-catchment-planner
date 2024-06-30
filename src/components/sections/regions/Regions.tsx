@@ -8,7 +8,7 @@ export default function Regions() {
       <div className="mx-6 grid max-w-[32rem] grid-cols-1 rounded-sm bg-brand-900 dark:bg-brand-700 md:max-w-[68rem] md:grid-cols-2">
         <div className="flex aspect-auto h-fit flex-col justify-center px-6 py-6 md:aspect-square md:h-full md:py-0">
           <header className="mb-6">
-            <h2 className="text-balance text-xl font-bold text-primary-foreground dark:text-foreground lg:text-3xl">
+            <h2 className="text-balance text-xl font-medium text-primary-foreground dark:text-foreground lg:text-3xl">
               Regions
             </h2>
           </header>
@@ -17,10 +17,15 @@ export default function Regions() {
               <p className="text-balance text-sm font-normal text-primary-foreground dark:text-foreground lg:text-base">
                 The Forestry Catchment Planner initially focuses on five
                 targeted regions:{" "}
-                <span className="font-bold">Te Tauihu (Tasman, Nelson, Marlborough)</span>,{" "}
-                <span className="font-bold">Te Matau-a-Māui (Hawkes Bay)</span>, and{" "}
-                <span className="font-bold">Tairāwhiti (Gisborne)</span>, with the goal of expanding
-                deployment throughout Aotearoa.
+                <span className="font-medium">
+                  Te Tauihu (Tasman, Nelson, Marlborough)
+                </span>
+                ,{" "}
+                <span className="font-medium">
+                  Te Matau-a-Māui (Hawkes Bay)
+                </span>
+                , and <span className="font-medium">Tairāwhiti (Gisborne)</span>
+                , with the goal of expanding deployment throughout Aotearoa.
               </p>
               <p className="text-balance text-sm font-normal text-primary-foreground dark:text-foreground lg:text-base">
                 This project will surface data and information that is currently

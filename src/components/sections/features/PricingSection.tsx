@@ -94,11 +94,11 @@ export default function PricingSection() {
     <section id="pricing">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 py-14 md:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">
+          <h4 className="text-xl font-medium tracking-tight text-black dark:text-white">
             Pricing
           </h4>
 
-          <h2 className="text-5xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
+          <h2 className="text-5xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
             Simple pricing for everyone.
           </h2>
 
@@ -166,7 +166,7 @@ export default function PricingSection() {
                 }}
                 className="flex flex-row gap-1"
               >
-                <span className="text-4xl font-bold text-black dark:text-white">
+                <span className="text-4xl font-medium text-black dark:text-white">
                   $
                   {interval === "year"
                     ? toHumanPrice(price.yearlyPrice, 0)
@@ -200,7 +200,7 @@ export default function PricingSection() {
                   {price.features.map((feature: any, idx: any) => (
                     <li
                       key={idx}
-                      className="flex items-center gap-3 text-xs font-bold text-black dark:text-white"
+                      className="flex items-center gap-3 text-xs font-medium text-black dark:text-white"
                     >
                       <CheckIcon className="h-5 w-5 shrink-0 rounded-full bg-green-400 p-[2px] text-black dark:text-white" />
                       <span className="flex">{feature}</span>

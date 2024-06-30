@@ -11,7 +11,7 @@ const components = {
   ) => (
     <h1
       {...props}
-      className="mx-auto translate-y-[-1rem] animate-fade-in text-balance py-6 text-5xl font-bold text-brand-950 opacity-0 [--animation-delay:200ms] dark:text-brand-50 sm:text-6xl md:text-7xl lg:text-8xl"
+      className="mx-auto translate-y-[-1rem] animate-fade-in text-balance py-6 text-5xl font-medium text-brand-950 opacity-0 [--animation-delay:200ms] dark:text-brand-50 sm:text-6xl md:text-7xl lg:text-8xl"
     >
       {props.children}
     </h1>

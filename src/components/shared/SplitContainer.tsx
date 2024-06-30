@@ -15,7 +15,7 @@ export default function SplitContainer({
       <div className="grid max-w-[68rem] grid-cols-1 rounded-sm bg-brand-700 dark:bg-brand-700 md:grid-cols-2">
         <div className="flex aspect-square h-full flex-col justify-center px-6">
           <header className="mb-6">
-            <h2 className="text-balance text-xl font-bold text-primary-foreground dark:text-foreground lg:text-3xl">
+            <h2 className="text-balance text-xl font-medium text-primary-foreground dark:text-foreground lg:text-3xl">
               {title}
             </h2>
           </header>

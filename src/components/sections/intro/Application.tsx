@@ -5,8 +5,8 @@ import trees from "/public/images/forests/forest_trees_duotone.png";
 export default function Application() {
   return (
     <section id="intro" className="flex items-center justify-center">
-      <div className="pb-14 md:pb-0 grid h-full grid-cols-1 bg-background dark:bg-brand-950 md:h-screen md:grid-cols-2">
-        <div className="relative order-2 h-96 md:h-full w-full md:order-1">
+      <div className="grid h-full grid-cols-1 bg-background pb-14 dark:bg-brand-950 md:h-screen md:grid-cols-2 md:pb-0">
+        <div className="relative order-2 h-96 w-full md:order-1 md:h-full">
           <Image
             src={trees}
             alt=""
@@ -17,7 +17,7 @@ export default function Application() {
         </div>
         <div className="order-2 h-fit px-6 py-6 md:order-1 md:h-full md:px-12 md:py-14">
           <header className="mb-14">
-            <h2 className="text-balance text-xl font-bold text-brand-950 dark:text-foreground lg:text-3xl">
+            <h2 className="text-balance text-xl font-medium text-brand-950 dark:text-foreground lg:text-3xl">
               Transparent and Sustainable Forestry Planning
             </h2>
           </header>

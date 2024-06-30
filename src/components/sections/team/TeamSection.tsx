@@ -64,7 +64,7 @@ export default function TeamSection() {
   return (
     <section className="flex h-full min-h-screen flex-col bg-background p-6 dark:bg-zinc-900">
       <header className="mb-[40px]">
-        <h2 className="w-fit py-12 text-3xl font-bold text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
+        <h2 className="w-fit py-12 text-3xl font-medium text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
           Team
         </h2>
       </header>
