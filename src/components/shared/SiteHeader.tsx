@@ -134,7 +134,7 @@ export function SiteHeader() {
             ></Link>
           </div>
 
-          <div className="mx-auto hidden h-full items-center space-x-16 md:flex">
+          <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
             <Link
               className="group flex space-x-4"
               href="https://docs.forestrycatchmentplanner.nz"
