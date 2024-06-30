@@ -134,7 +134,7 @@ export function SiteHeader() {
             ></Link>
           </div>
 
-          <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
+          <div className="mx-auto hidden h-full items-center space-x-16 md:flex">
             <Link
               className="group flex space-x-4"
               href="https://docs.forestrycatchmentplanner.nz"
@@ -184,7 +184,7 @@ export function SiteHeader() {
             </Link>
 
             <button
-              className="ml-6 md:hidden"
+              className="md:hidden"
               onClick={() => setHamburgerMenuIsOpen((open) => !open)}
             >
               <span className="sr-only">Toggle menu</span>
@@ -192,7 +192,7 @@ export function SiteHeader() {
             </button>
           </div>
           <motion.ul
-            className={`flex flex-col ease-in md:flex-row md:items-center md:normal-case`}
+            className={`flex px-8 flex-col ease-in md:flex-row md:items-center md:normal-case`}
             variants={containerVariants}
             initial="initial"
             animate={hamburgerMenuIsOpen ? "open" : "exit"}
@@ -201,7 +201,7 @@ export function SiteHeader() {
               <motion.li
                 variants={mobileLinkVar}
                 key={item.id}
-                className="py-0.5 pl-8"
+                className="py-0.5"
               >
                 <Link
                   className={`hover:text-grey text-md flex h-[var(--navigation-height)] w-full items-center transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${

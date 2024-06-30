@@ -99,7 +99,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 rounded-md border-neutral-700/20 px-8 py-4 sm:flex sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-neutral-700/20 px-8 py-4 sm:flex sm:flex-row sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <Link href="/" className="cursor-pointer">

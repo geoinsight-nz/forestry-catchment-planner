@@ -28,7 +28,7 @@ export default function Hero() {
           alt="iPad"
           sizes="100vw"
           priority
-          className="absolute bottom-0 right-0 h-auto max-w-[32vw] translate-x-[2rem] px-4 brightness-95 md:max-w-[24vw]"
+          className="absolute bottom-0 right-0 h-auto max-w-[32vw] translate-x-[0.65rem] px-2 brightness-95 md:max-w-[24vw]"
         />
       </div>
     </div>
