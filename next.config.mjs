@@ -1,9 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-/**
- * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
- * for Docker builds.
- */
-await import("./src/env.js");
+
 import createMDX from "@next/mdx";
 import withExportImages from "next-export-optimize-images";
 import remarkGfm from "remark-gfm";

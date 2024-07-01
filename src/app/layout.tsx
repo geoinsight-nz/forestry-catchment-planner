@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/shared/SiteHeader";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { cn } from "@/lib/utils";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.forestrycatchmentplanner.nz"),
@@ -71,6 +72,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Head>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `!function(t){function e(){var e=this||self;e.globalThis=e,delete t.prototype._T_}"object"!=typeof globalThis&&(this?e():(t.defineProperty(t.prototype,"_T_",{configurable:!0,get:e}),_T_))}(Object);`,
+              }}
+            />
+          </Head>
           <SiteHeader />
           {children}
           <SiteFooter />
