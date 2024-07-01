@@ -1,7 +1,8 @@
 import Partner from "./Partner";
 import geoinsightDark from "/public/images/logos/geoinsight_dark.webp";
 import geoinsightLight from "/public/images/logos/geoinsight_light.png";
-import gns from "/public/images/logos/gns_light.png";
+import gnsDark from "/public/images/logos/gns_dark.png";
+import gnsLight from "/public/images/logos/gns_light.png";
 import induforDark from "/public/images/logos/indufor_dark.png";
 import induforLight from "/public/images/logos/indufor_light.png";
 import uc from "/public/images/logos/uc.png";
@@ -22,8 +23,8 @@ const partners = [
     about:
       "GNS Science envisions a cleaner, safer, and more prosperous future for Aotearoa New Zealand by researching geological and Earth-system processes, increasing resilience to natural hazards and climate change, and driving sustainable economic growth in the energy sector.",
     body: "Their role in the project was a significant one, calculating the Landslide susceptibility modelling using their internal Rainfall Induced Landslide Models, deriving Hillslope and Catchment Management Units from available watershed data sources and calculating the Melton Ratios for debris flow probability.",
-    src: gns,
-    srcDark: gns,
+    src: gnsLight,
+    srcDark: gnsDark,
   },
   {
     id: "uc",
