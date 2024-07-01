@@ -28,6 +28,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
     <Prose className="py-16">
       <h2
         className={cn(
+          isInView ? "opacity-100" : "opacity-80",
           "text-balance text-xl font-medium text-brand-950 transition-colors dark:text-brand-50 lg:text-3xl",
         )}
       >
@@ -36,6 +37,7 @@ export const FeatureText = ({ id, title, body }: Props) => {
       <p
         ref={ref}
         className={cn(
+          isInView ? "opacity-100" : "opacity-80",
           "pt-6 text-sm font-normal text-brand-950 transition-colors dark:text-brand-50 lg:text-base",
         )}
       >
