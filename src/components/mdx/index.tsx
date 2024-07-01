@@ -1,4 +1,5 @@
-import Image, { type ImageProps } from "next/image";
+import Image from "next-export-optimize-images/image";
+import { type ImageProps } from "next/image";
 import Link from "next/link";
 import { type ComponentPropsWithoutRef } from "react";
 

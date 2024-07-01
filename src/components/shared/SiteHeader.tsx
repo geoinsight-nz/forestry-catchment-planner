@@ -15,6 +15,7 @@ import {
 import { AlignJustify, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ExternalLinkIcon } from "../icons/ExternalLinkIcon";
 
 const menuItem = [
   {
@@ -144,6 +145,9 @@ export function SiteHeader() {
               <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
               <h2 className="text-md text-brand-900 transition delay-150 group-hover:underline dark:text-foreground">
                 Documentation
+                <span>
+                  <ExternalLinkIcon className="text-brand-900 dark:text-foreground size-4" />
+                </span>
               </h2>
             </Link>
             <Link
@@ -192,7 +196,7 @@ export function SiteHeader() {
             </button>
           </div>
           <motion.ul
-            className={`flex px-8 flex-col ease-in md:flex-row md:items-center md:normal-case`}
+            className={`flex flex-col px-8 ease-in md:flex-row md:items-center md:normal-case`}
             variants={containerVariants}
             initial="initial"
             animate={hamburgerMenuIsOpen ? "open" : "exit"}

@@ -1,4 +1,5 @@
-import Image, { type StaticImageData } from "next/image";
+import Image from "next-export-optimize-images/image";
+import { type StaticImageData } from "next/image";
 import { Prose } from "../mdx/Prose";
 
 export default function SplitContainer({

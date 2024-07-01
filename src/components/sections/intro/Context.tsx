@@ -1,5 +1,5 @@
 import { Prose } from "@/components/mdx/Prose";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import forest from "/public/images/forests/forest_river_duotone.png";
 
 export default function Context() {
