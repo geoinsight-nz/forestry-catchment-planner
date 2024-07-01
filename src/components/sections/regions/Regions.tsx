@@ -1,5 +1,5 @@
 import { Prose } from "@/components/mdx/Prose";
-import Image from "next/image";
+import DynamicImage from "@/components/shared/DynamicImage";
 import regions from "/public/images/visualisations/nz_regions_dark.png";
 
 export default function Regions() {
@@ -39,7 +39,7 @@ export default function Regions() {
           </article>
         </div>
         <div className="relative aspect-square h-full">
-          <Image
+          <DynamicImage
             src={regions}
             alt=""
             fill

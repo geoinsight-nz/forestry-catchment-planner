@@ -1,6 +1,7 @@
 "use client";
 
-import Image, { type ImageProps, type StaticImageData } from "next/image";
+import Image from "next-export-optimize-images/image";
+import { type ImageProps, type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
 type DynamicImageProps = {
@@ -30,13 +31,15 @@ export default function DynamicImage({
   }, []);
 
   const imageSrc = srcDark && isDarkMode ? srcDark : src;
+
   return (
-      <Image
-        src={imageSrc}
-        sizes="100vw"
-        className={props.className}
-        {...props}
-        alt={props.alt || ""}
-      />
+    <Image
+      src={imageSrc}
+      sizes={props.sizes ?? "100vw"}
+      placeholder="blur"
+      className={props.className}
+      {...props}
+      alt={props.alt ?? ""}
+    />
   );
 }

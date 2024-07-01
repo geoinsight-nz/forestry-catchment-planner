@@ -1,5 +1,6 @@
 import { Prose } from "@/components/mdx/Prose";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next-export-optimize-images/image";
+import { type StaticImageData } from "next/image";
 
 type TeamMemberProps = {
   name: string;

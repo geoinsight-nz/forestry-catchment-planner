@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
+import DynamicImage from "@/components/shared/DynamicImage";
 import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
-import Image, { type StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 
 type FeatureCardProps = {
   id: string;
@@ -11,7 +11,7 @@ type FeatureCardProps = {
   caption: string;
 };
 
-export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
+export default function FeatureCard({ id, image }: FeatureCardProps) {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
   return (
     <div
@@ -21,16 +21,13 @@ export default function FeatureCard({ id, image, caption }: FeatureCardProps) {
       )}
     >
       <figure className="relative flex h-full w-full flex-col gap-4">
-        <Image
+        <DynamicImage
           src={image}
           alt="Forestry Catchment Planner feature"
           fill
-          placeholder="blur"
           className="h-full w-full rounded-sm object-contain"
-          unoptimized
         />
       </figure>
-      {/* <p className="pt-2 text-sm text-foreground">{caption}</p> */}
     </div>
   );
 }

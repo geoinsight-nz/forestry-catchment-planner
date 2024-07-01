@@ -1,7 +1,6 @@
 "use client";
 
 import DynamicImage from "@/components/shared/DynamicImage";
-import { Figure } from "@/components/shared/Figure";
 import { type StaticImageData } from "next/image";
 
 type PartnerProps = {

@@ -1,6 +1,7 @@
 "use client";
 
-import Image, { type ImageProps, type StaticImageData } from "next/image";
+import Image from "next-export-optimize-images/image";
+import { type ImageProps, type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
 type FigureProps = {

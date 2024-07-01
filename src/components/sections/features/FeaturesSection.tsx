@@ -1,5 +1,5 @@
 import { FeatureText } from "@/components/sections/features/FeatureText";
-import Image from "next/image";
+import DynamicImage from "@/components/shared/DynamicImage";
 import { Fragment } from "react";
 import FeatureCard from "./FeatureCard";
 import macVisualise from "/public/images/mockups/mac_pro_3.png";
@@ -50,13 +50,11 @@ export default function FeaturesSection() {
             {features.map((feature) => (
               <Fragment key={feature.id}>
                 <figure className="relative flex h-[56vw] w-auto flex-col gap-4 lg:hidden">
-                  <Image
+                  <DynamicImage
                     src={feature.image}
                     alt="Forestry Catchment Planner feature"
                     fill
-                    placeholder="blur"
                     className="h-full w-auto rounded-sm object-contain"
-                    unoptimized
                   />
                 </figure>
                 <li key={feature.id}>
