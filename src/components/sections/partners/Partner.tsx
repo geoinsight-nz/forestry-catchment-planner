@@ -42,7 +42,7 @@ export default function Partner({
           src={src}
           srcDark={srcDark}
           alt={title}
-          className="h-full w-auto"
+          className="h-full max-h-32 w-auto mx-auto"
         />
       </div>
     </div>
