@@ -48,7 +48,7 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="min-h-screen bg-background p-6">
+    <section className="min-h-screen border-t border-brand-950 bg-background p-6 dark:border-brand-900">
       <h2 className="w-fit text-balance py-12 text-3xl font-medium text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:sticky lg:top-0 lg:text-6xl">
         Partners
       </h2>

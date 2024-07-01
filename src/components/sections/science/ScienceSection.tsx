@@ -12,7 +12,7 @@ export default function ScienceSection() {
   return (
     <section
       id="science"
-      className="h-full min-h-screen w-full bg-brand-900 p-6 dark:bg-brand-950"
+      className="h-full min-h-screen w-full bg-brand-900 p-6 dark:bg-brand-950 border-t border-brand-900 dark:border-brand-500"
     >
       <header className="mb-[80px]">
         <h2 className="text-balance text-3xl font-medium text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
