@@ -39,22 +39,20 @@ const footerNavs = [
       },
     ],
   },
+  {
+    label: "Colophon",
+    items: [
+      {
+        href: "",
+        name: "Design: Blaine Western and Henry Babbage",
+      },
+      {
+        href: "https://www.github.com/henrybabbage",
+        name: "Programming: Henry Babbage",
+      },
+    ],
+  },
 ];
-
-const legalNav = {
-  label: "Imprint",
-  items: [
-    {
-      href: "#",
-      name: "Terms",
-    },
-
-    {
-      href: "#",
-      name: "Privacy",
-    },
-  ],
-};
 
 export function SiteFooter() {
   return (
@@ -111,8 +109,4 @@ export function SiteFooter() {
       </div>
     </footer>
   );
-}
-
-function Credits() {
-  return <div>Credits</div>;
 }
