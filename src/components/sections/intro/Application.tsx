@@ -12,6 +12,7 @@ export default function Application() {
             alt=""
             fill
             sizes="100vw"
+            placeholder="blur"
             className="h-full w-full object-cover"
           />
         </div>
