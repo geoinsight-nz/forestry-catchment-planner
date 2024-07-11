@@ -13,6 +13,7 @@ Visit the Forestry Catchment Planner [GitHub repo](https://github.com/henrybabba
 - [Next.js](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Markdown](https://www.markdownguide.org/basic-syntax/)
+- [MDX](https://nextjs.org/docs/pages/building-your-application/configuring/mdx)
 
 ## Deployment
 
