@@ -4,9 +4,9 @@ This website is a landing page for the Forestry Catchment Planner tool bootstrap
 
 ## Forestry Catchment Planner Documentation
 
-Visit the Forestry Catchment Planner website [documentation website](https://www.docs.forestrycatchmentplanner.nz/).
+Visit the Forestry Catchment Planner [documentation website](https://www.docs.forestrycatchmentplanner.nz/).
 
-Visit the Forestry Catchment Planner GitHub repo [github repo](https://github.com/henrybabbage/forestry-catchment-planner-docs).
+Visit the Forestry Catchment Planner [GitHub repo](https://github.com/henrybabbage/forestry-catchment-planner-docs).
 
 ## Useful Links
 
