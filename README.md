@@ -1,6 +1,6 @@
 # Forestry Catchment Planner
 
-This website is a landing page for the Forestry Catchment Planner tool bootstrapped with [`create-t3-app`](https://create.t3.gg/).
+This website is a landing page for the Forestry Catchment Planner tool bootstrapped with [T3 Stack](https://create.t3.gg/).
 
 ## What's next? How do I make an app with this?
 
