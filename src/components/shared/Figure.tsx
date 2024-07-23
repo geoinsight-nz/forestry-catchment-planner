@@ -12,7 +12,7 @@ export function Figure({ src, srcDark, ...props }: FigureProps) {
   return (
     <figure className="relative">
       <>
-        <div data-hide-on-theme="dark">
+        <div data-hide-on-theme="dark" className="dark:hidden">
           <Image
             src={src}
             sizes="100vw"
@@ -22,7 +22,7 @@ export function Figure({ src, srcDark, ...props }: FigureProps) {
             alt={props.alt || ""}
           />
         </div>
-        <div data-hide-on-theme="light">
+        <div data-hide-on-theme="light" className="hidden dark:block">
           <Image
             src={srcDark ?? src}
             sizes="100vw"
