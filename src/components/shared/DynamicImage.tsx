@@ -2,7 +2,6 @@
 
 import Image from "next-export-optimize-images/image";
 import { type ImageProps, type StaticImageData } from "next/image";
-import { useEffect, useState } from "react";
 
 type DynamicImageProps = {
   srcDark?: StaticImageData;
@@ -13,33 +12,28 @@ export default function DynamicImage({
   srcDark,
   ...props
 }: DynamicImageProps) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const matchDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(matchDarkMode.matches);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsDarkMode(e.matches);
-    };
-
-    matchDarkMode.addEventListener("change", handleChange);
-
-    return () => {
-      matchDarkMode.removeEventListener("change", handleChange);
-    };
-  }, []);
-
-  const imageSrc = srcDark && isDarkMode ? srcDark : src;
-
   return (
-    <Image
-      src={imageSrc}
-      sizes={props.sizes ?? "100vw"}
-      placeholder="blur"
-      className={props.className}
-      {...props}
-      alt={props.alt ?? ""}
-    />
+    <>
+      <div data-hide-on-theme="dark">
+        <Image
+          src={src}
+          sizes={props.sizes ?? "100vw"}
+          className={props.className}
+          placeholder="blur"
+          {...props}
+          alt={props.alt ?? ""}
+        />
+      </div>
+      <div data-hide-on-theme="light">
+        <Image
+          src={srcDark ?? src}
+          sizes={props.sizes ?? "100vw"}
+          className={props.className}
+          placeholder="blur"
+          {...props}
+          alt={props.alt ?? ""}
+        />
+      </div>
+    </>
   );
 }
