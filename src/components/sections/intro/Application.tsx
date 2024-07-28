@@ -1,5 +1,5 @@
-import { Prose } from "@/components/mdx/Prose";
 import Image from "next-export-optimize-images/image";
+import ApplicationText from "./ApplicationText";
 import trees from "/public/images/forests/forest_trees_duotone.png";
 
 export default function Application() {
@@ -17,30 +17,7 @@ export default function Application() {
           />
         </div>
         <div className="order-2 h-fit px-6 py-6 md:order-1 md:h-full md:px-12 md:py-14">
-          <header className="mb-14">
-            <h2 className="text-balance text-xl font-medium text-brand-950 dark:text-foreground lg:text-3xl">
-              Transparent and Sustainable Forestry Planning
-            </h2>
-          </header>
-          <article className="flex flex-col">
-            <Prose className="">
-              <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-                The Forestry Catchment Planner aims to create a transparent,
-                cohesive system for better understanding intergenerational
-                harvesting cycles on a catchment scale.
-              </p>
-              <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-                The tool provides insights into forestry stand locations, recent
-                harvests, and data on erosion susceptibility hazard for future
-                harvesting schedules.
-              </p>
-              <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-                This enables effective environmental stewardship, improving
-                water quality, promoting healthier ecosystems, and facilitating
-                better holistic planning for future planting and harvesting.
-              </p>
-            </Prose>
-          </article>
+          <ApplicationText />
         </div>
       </div>
     </section>
