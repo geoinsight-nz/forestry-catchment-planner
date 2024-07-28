@@ -3,11 +3,10 @@
 import DynamicImage from "@/components/shared/DynamicImage";
 import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
-import { type StaticImageData } from "next/image";
 
 type FeatureCardProps = {
   id: string;
-  image: StaticImageData;
+  image: string;
   caption: string;
 };
 
