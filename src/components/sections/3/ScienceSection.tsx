@@ -7,7 +7,8 @@ import {
   ShieldWarning,
   UsersThree,
 } from "@phosphor-icons/react/dist/ssr";
-import ScienceText from "./ScienceText";
+import Q1 from "./Q1";
+import ScienceHeading from "./ScienceHeading";
 
 export default function ScienceSection() {
   return (
@@ -15,22 +16,13 @@ export default function ScienceSection() {
       id="science"
       className="h-full min-h-screen w-full border-t border-brand-900 bg-brand-900 p-6 dark:border-brand-500 dark:bg-brand-950"
     >
-      <ScienceText />
+      <ScienceHeading />
       <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] md:grid-cols-2 lg:pl-[24vw]">
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
             <MapPin size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          <h3 className="text-xl font-medium text-brand-50 dark:text-brand-50">
-            Forest Location and Age Classification
-          </h3>
-          <Prose>
-            <p className="text-base text-brand-50 dark:text-brand-50">
-              Where are the exotic forests located across Te Tauihu, Te
-              Matau-a-Māui, and Tairāwhiti, and how can we classify them by age
-              to identify maturing forests?
-            </p>
-          </Prose>
+          <Q1 />
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">

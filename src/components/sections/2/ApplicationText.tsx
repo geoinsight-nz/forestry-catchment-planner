@@ -7,8 +7,8 @@ export default function ApplicationText() {
   // MDX text file for this component
   const filePath = path.join(
     process.cwd(),
-    "src/app/_mdx-content",
-    "application.mdx",
+    "src/app/_mdx-content/sections/2",
+    "2.2.mdx",
   );
   // Read the contents of the MDX file
   const src = fs.readFileSync(filePath, "utf8");

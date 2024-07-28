@@ -1,16 +1,20 @@
 import fs from "fs";
 import path from "path";
 import { Suspense } from "react";
-import { HeroMDX } from "./HeroMDX";
+import { QuestionsMDX } from "./QuestionsMDX";
 
-export default function HeroText() {
+export default function Q5() {
   // MDX text file for this component
-  const filePath = path.join(process.cwd(), "src/app/_mdx-content", "hero.mdx");
+  const filePath = path.join(
+    process.cwd(),
+    "src/app/_mdx-content/3/questions",
+    "q5.mdx",
+  );
   // Read the contents of the MDX file
   const src = fs.readFileSync(filePath, "utf8");
   return (
     <Suspense>
-      <HeroMDX source={src} />
+      <QuestionsMDX source={src} />
     </Suspense>
   );
 }

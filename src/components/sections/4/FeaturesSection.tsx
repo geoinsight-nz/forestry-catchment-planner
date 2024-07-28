@@ -1,4 +1,4 @@
-import { FeatureText } from "@/components/sections/features/FeatureText";
+import { FeatureText } from "@/components/sections/4/FeatureText";
 import DynamicImage from "@/components/shared/DynamicImage";
 import { Fragment } from "react";
 import FeatureCard from "./FeatureCard";
