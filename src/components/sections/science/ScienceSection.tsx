@@ -7,18 +7,15 @@ import {
   ShieldWarning,
   UsersThree,
 } from "@phosphor-icons/react/dist/ssr";
+import ScienceText from "./ScienceText";
 
 export default function ScienceSection() {
   return (
     <section
       id="science"
-      className="h-full min-h-screen w-full bg-brand-900 p-6 dark:bg-brand-950 border-t border-brand-900 dark:border-brand-500"
+      className="h-full min-h-screen w-full border-t border-brand-900 bg-brand-900 p-6 dark:border-brand-500 dark:bg-brand-950"
     >
-      <header className="mb-[80px]">
-        <h2 className="text-balance text-3xl font-medium text-brand-50 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
-          Key questions
-        </h2>
-      </header>
+      <ScienceText />
       <div className="grid h-full max-w-full grid-cols-1 place-items-center gap-x-[8vw] gap-y-[2vw] md:grid-cols-2 lg:pl-[24vw]">
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -35,7 +32,7 @@ export default function ScienceSection() {
             </p>
           </Prose>
         </aside>
-        <aside className="flex h-80  w-full flex-col gap-y-6 md:w-80">
+        <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
             <Presentation
               size={48}
