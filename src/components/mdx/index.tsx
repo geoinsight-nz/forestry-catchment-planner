@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import Image from "next-export-optimize-images/image";
 import { type ImageProps } from "next/image";
@@ -5,6 +6,8 @@ import Link from "next/link";
 import { Children, type ComponentPropsWithoutRef } from "react";
 
 export const a = Link;
+
+export { FeaturesList } from "@/components/sections/4/FeaturesList";
 
 export function H1(props: ComponentPropsWithoutRef<"h1">) {
   return <h1 className="text-balance" {...props} />;

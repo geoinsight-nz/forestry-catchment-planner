@@ -2,6 +2,7 @@ import { FeatureText } from "@/components/sections/4/FeatureText";
 import DynamicImage from "@/components/shared/DynamicImage";
 import { Fragment } from "react";
 import FeatureCard from "./FeatureCard";
+import FeaturesHeading from "./FeaturesHeading";
 import macVisualise from "/public/images/mockups/mac_pro_3.png";
 import macBaseline from "/public/images/mockups/mac_pro_4.png";
 import macTools from "/public/images/mockups/mac_pro_5.png";
@@ -40,12 +41,10 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="min-h-screen bg-background dark:bg-zinc-900">
-      <div className="flex w-full items-start gap-20 p-8">
-        <div className="flex w-full flex-col gap-32 lg:pb-[50vh]">
-          <h2 className="text-3xl font-medium text-brand-950 dark:text-brand-50 sm:text-4xl md:text-5xl lg:text-6xl">
-            Visualising Forestry Harvesting Cycles
-          </h2>
+    <section className="min-h-screen bg-background p-6 dark:bg-zinc-900">
+      <FeaturesHeading />
+      <div className="flex w-full items-start gap-20">
+        <div className="flex w-full flex-col gap-32 lg:pt-[30vh] lg:pb-[50vh]">
           <ul>
             {features.map((feature) => (
               <Fragment key={feature.id}>
