@@ -1,4 +1,3 @@
-import { Prose } from "@/components/mdx/Prose";
 import {
   ApproximateEquals,
   MapPin,
@@ -8,6 +7,10 @@ import {
   UsersThree,
 } from "@phosphor-icons/react/dist/ssr";
 import Q1 from "./Q1";
+import Q2 from "./Q2";
+import Q3 from "./Q3";
+import Q4 from "./Q4";
+import Q5 from "./Q5";
 import ScienceHeading from "./ScienceHeading";
 
 export default function ScienceSection() {
@@ -31,16 +34,7 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl font-medium text-brand-50 dark:text-brand-50">
-            Visualizing Clearfell Harvesting Regions
-          </h3>
-          <Prose>
-            <p className="text-base text-brand-50 dark:text-brand-50">
-              How can we visualize regions and catchments where significant
-              clearfell harvesting is anticipated, and assess the associated
-              risks for potential mass erosion?
-            </p>
-          </Prose>
+          <Q2 />
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -53,32 +47,13 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl font-medium text-brand-50 dark:text-brand-50">
-            Landslide Vulnerability and Debris Flow Prediction
-          </h3>
-          <Prose>
-            <p className="text-base text-brand-50 dark:text-brand-50">
-              Can we identify areas approaching harvest and classify the
-              vulnerability of the underlying land to landslides, as well as
-              predict the probability of debris flows in the context of large
-              storm events?
-            </p>
-          </Prose>
+          <Q3 />
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
             <Plant size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          <h3 className="text-xl font-medium text-brand-50 dark:text-brand-50">
-            Managing Intergenerational Risks in Forestry
-          </h3>
-          <Prose>
-            <p className="text-base text-brand-50 dark:text-brand-50">
-              How do we understand and manage the intergenerational risks
-              arising from the overlap of forestry harvesting cycles and extreme
-              weather events?
-            </p>
-          </Prose>
+          <Q4 />
         </aside>
         <div className="flex h-[22rem]  w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -87,16 +62,7 @@ export default function ScienceSection() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          <h3 className="text-xl font-medium text-brand-50 dark:text-brand-50">
-            Empowering Tangata Whenua
-          </h3>
-          <Prose>
-            <p className="text-base text-brand-50 dark:text-brand-50">
-              What measures can empower tangata whenua to protect cultural
-              heritage while promoting holistic land use thinking and proactive
-              catchment planning?
-            </p>
-          </Prose>
+          <Q5 />
         </div>
       </div>
     </section>

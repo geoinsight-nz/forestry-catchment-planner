@@ -7,7 +7,7 @@ export default function Q2() {
   // MDX text file for this component
   const filePath = path.join(
     process.cwd(),
-    "src/app/_mdx-content/3/questions",
+    "src/app/_mdx-content/sections/3/questions",
     "q2.mdx",
   );
   // Read the contents of the MDX file
