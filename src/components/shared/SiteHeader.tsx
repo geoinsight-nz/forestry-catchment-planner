@@ -144,7 +144,7 @@ export function SiteHeader() {
             >
               <ClipboardDocumentListIcon className="size-6 text-brand-900 dark:text-foreground" />
               <h2 className="text-md inline-flex items-center gap-2 text-brand-900 transition delay-150 group-hover:underline dark:text-foreground">
-                Documentation
+                Project Documentation
                 <span className="text-brand-900 dark:text-foreground">
                   <ExternalLinkIcon className="text-brand-900 dark:text-foreground" />
                 </span>
@@ -158,7 +158,7 @@ export function SiteHeader() {
             >
               <MapIcon className="size-6 text-brand-900 dark:text-foreground" />
               <h2 className="text-md inline-flex items-center gap-2 text-brand-900 transition delay-150 group-hover:underline dark:text-foreground">
-                Open app
+                Open FCP
                 <span className="text-brand-900 dark:text-foreground">
                   <ExternalLinkIcon className="text-brand-900 dark:text-foreground" />
                 </span>
@@ -182,7 +182,7 @@ export function SiteHeader() {
           animate={hamburgerMenuIsOpen ? "animate" : "exit"}
           className={cn(
             "fixed left-0 top-0 z-50 block h-screen w-full overflow-auto bg-background/70 backdrop-blur-[100px] sm:hidden",
-            "pointer-events-none" && !hamburgerMenuIsOpen,
+            { "pointer-events-none": !hamburgerMenuIsOpen },
           )}
         >
           <div className="container flex h-[3.5rem] items-center justify-between">
