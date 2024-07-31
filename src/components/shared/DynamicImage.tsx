@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next-export-optimize-images/image";
 import { type ImageProps, type StaticImageData } from "next/image";
 

@@ -1,9 +1,10 @@
+import DynamicImage from "@/components/shared/DynamicImage";
 import fs from "fs";
 import path from "path";
-import { Suspense } from "react";
+import { Fragment, Suspense } from "react";
 import { FeaturesMDX } from "./FeaturesMDX";
 
-export default function F4() {
+export default function F4({ id, image }: { id: string; image: string }) {
   // MDX text file for this component
   const filePath = path.join(
     process.cwd(),
@@ -12,9 +13,22 @@ export default function F4() {
   );
   // Read the contents of the MDX file
   const src = fs.readFileSync(filePath, "utf8");
+
   return (
-    <Suspense>
-      <FeaturesMDX source={src} />
-    </Suspense>
+    <Fragment>
+      <figure className="relative flex h-[56vw] w-auto flex-col gap-4 lg:hidden">
+        <DynamicImage
+          src={image}
+          alt="Forestry Catchment Planner feature"
+          fill
+          className="h-full w-auto rounded-sm object-contain"
+        />
+      </figure>
+      <li>
+        <Suspense>
+          <FeaturesMDX source={src} id={id} />
+        </Suspense>
+      </li>
+    </Fragment>
   );
 }
