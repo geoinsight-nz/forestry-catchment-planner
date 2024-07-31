@@ -14,7 +14,7 @@ export default function DynamicImage({
 }: DynamicImageProps) {
   return (
     <>
-      <div data-hide-on-theme="dark" className="dark:hidden relative">
+      <div data-hide-on-theme="dark" className="dark:hidden">
         <Image
           src={src}
           sizes={props.sizes ?? "100vw"}
@@ -24,7 +24,7 @@ export default function DynamicImage({
           alt={props.alt ?? ""}
         />
       </div>
-      <div data-hide-on-theme="light" className="hidden dark:block relative">
+      <div data-hide-on-theme="light" className="hidden dark:block">
         <Image
           src={srcDark ?? src}
           sizes={props.sizes ?? "100vw"}
