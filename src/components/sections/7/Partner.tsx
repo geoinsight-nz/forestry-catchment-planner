@@ -20,7 +20,7 @@ export default function Partner({
   srcDark,
 }: PartnerProps) {
   return (
-    <div className="group flex-col md:flex-row gap-6 flex w-full items-center border-t border-solid border-t-[var(--foreground)] py-[48px] transition last-of-type:border-b last-of-type:border-solid last-of-type:border-b-[var(--foreground)]">
+    <div className="group flex w-full flex-col items-center gap-6 border-t border-solid border-t-[var(--foreground)] py-[48px] transition last-of-type:border-b last-of-type:border-solid last-of-type:border-b-[var(--foreground)] md:flex-row">
       <div className="flex flex-col gap-6 transition duration-300">
         <div className="flex gap-4">
           <h2 className="text-xl font-medium text-brand-950 dark:text-brand-50">
@@ -36,12 +36,12 @@ export default function Partner({
           </p>
         </div>
       </div>
-      <div className="relative mr-auto md:ml-auto h-auto w-64">
+      <div className="relative mr-auto h-auto w-56 max-h-56 md:ml-auto">
         <DynamicImage
           src={src}
           srcDark={srcDark}
           alt={title}
-          className="h-full max-h-56 w-auto md:mx-auto"
+          className="md:mx-auto"
         />
       </div>
     </div>

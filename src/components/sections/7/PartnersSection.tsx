@@ -53,7 +53,7 @@ export default function PartnersSection() {
         Partners
       </h2>
       <div className="flex h-full items-center justify-end">
-        <div className="flex w-full flex-col items-center justify-center lg:w-3/4">
+        <div className="flex w-full flex-col items-center justify-center md:w-3/4">
           {partners.map((partner) => {
             return (
               <Partner
