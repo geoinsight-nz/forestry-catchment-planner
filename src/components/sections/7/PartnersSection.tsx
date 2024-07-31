@@ -1,5 +1,5 @@
 import Partner from "./Partner";
-import geoinsightDark from "/public/images/logos/geoinsight_dark.webp";
+import geoinsightDark from "/public/images/logos/geoinsight_dark.png";
 import geoinsightLight from "/public/images/logos/geoinsight_light.png";
 import gnsDark from "/public/images/logos/gns_dark.png";
 import gnsLight from "/public/images/logos/gns_light.png";

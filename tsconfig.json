@@ -37,6 +37,6 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts"
-, "next.config.mjs"  ],
+, "next.config.mjs", "src/app/_mdx-content/sections/4/features/f1.mdx"  ],
   "exclude": ["node_modules"]
 }

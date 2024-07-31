@@ -36,12 +36,12 @@ export default function Partner({
           </p>
         </div>
       </div>
-      <div className="relative mr-auto md:ml-auto h-auto w-44">
+      <div className="relative mr-auto md:ml-auto h-auto w-64">
         <DynamicImage
           src={src}
           srcDark={srcDark}
           alt={title}
-          className="h-full max-h-32 w-auto md:mx-auto"
+          className="h-full max-h-56 w-auto md:mx-auto"
         />
       </div>
     </div>
