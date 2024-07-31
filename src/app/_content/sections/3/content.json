@@ -1,0 +1,30 @@
+{
+    "heading": "Key Questions",
+    "questions": [
+        {
+            "id": "q1",
+            "heading": "Forest Location and Age Classification",
+            "text": "Where are the exotic forests located across Te Tauihu, Te Matau-a-Māui, and Tairāwhiti, and can we determine how old they are to identify maturing forests?"
+        },
+        {
+            "id": "q2",
+            "heading": "Visualizing Clearfell Harvesting Regions",
+            "text": "What are the current threats to these forests, and how can we identify the most important threats to inform management?"
+        },
+        {
+            "id": "q3",
+            "heading": "Landslide Vulnerability and Debris Flow Prediction",
+            "text": "Can we identify areas approaching harvest and classify the vulnerability of the underlying land to landslides, as well as predict the probability of debris flows in the context of large storm events?"
+        },
+        {
+            "id": "q4",
+            "heading": "Managing Intergenerational Risks in Forestry",
+            "text": "How do we understand and manage the intergenerational risks arising from the overlap of forestry harvesting cycles and extreme weather events?"
+        },
+        {
+            "id": "q5",
+            "heading": "Empowering Tangata Whenua",
+            "text": "What measures can empower tangata whenua to protect cultural heritage while promoting holistic land use thinking and proactive catchment planning?"
+        }
+    ]
+}
