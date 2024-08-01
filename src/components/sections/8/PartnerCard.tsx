@@ -9,7 +9,7 @@ type PartnerProps = {
   srcDark: string;
 };
 
-export default function Partner({
+export default function PartnerCard({
   name,
   about,
   role,

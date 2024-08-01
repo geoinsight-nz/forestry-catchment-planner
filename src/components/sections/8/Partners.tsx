@@ -1,6 +1,6 @@
 import { readJSONFile } from "@/utils/readJSONFile";
 import path from "path";
-import Partner from "./Partner";
+import Partner from "./PartnerCard";
 
 type Data = {
   heading: string;
@@ -14,7 +14,7 @@ type Data = {
   }[];
 };
 
-export default async function PartnersSection() {
+export default async function Partners() {
   const filePath = path.join(
     process.cwd(),
     "src/app/_content/sections/8",
