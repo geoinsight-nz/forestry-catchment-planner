@@ -17,7 +17,7 @@ type Data = {
 export default async function FeaturesSection() {
   const filePath = path.join(
     process.cwd(),
-    "src/app/_content/sections/4",
+    "src/app/_content/sections/5",
     "content.json",
   );
 
