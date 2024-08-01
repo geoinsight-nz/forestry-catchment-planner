@@ -6,8 +6,8 @@ import FeaturesList from "./FeaturesList";
 type Data = {
   heading: string;
   features: {
-    title: string;
-    body: string;
+    heading: string;
+    text: string;
     id: string;
     image: string;
     caption: string;

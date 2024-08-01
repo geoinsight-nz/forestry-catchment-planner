@@ -2,10 +2,11 @@ import FeatureCard from "./FeatureCard";
 import FeatureText from "./FeatureText";
 
 export type Feature = {
-  title: string;
-  body: string;
+  heading: string;
+  text: string;
   id: string;
   image: string;
+  caption?: string;
 };
 
 export default function FeaturesList({ features }: { features: Feature[] }) {
@@ -17,8 +18,8 @@ export default function FeaturesList({ features }: { features: Feature[] }) {
             <FeatureText
               id={feature.id}
               key={feature.id}
-              title={feature.title}
-              body={feature.body}
+              heading={feature.heading}
+              text={feature.text}
             />
           ))}
         </ul>
