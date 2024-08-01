@@ -12,7 +12,7 @@ type Props = {
   body: string;
 };
 
-export const FeatureText = ({ id, title, body }: Props) => {
+export default function FeatureText({ id, title, body }: Props) {
   const ref = useRef<HTMLParagraphElement>(null);
   const isInView = useInView(ref, {
     margin: "-50% 0px -50% 0px",
@@ -45,4 +45,4 @@ export const FeatureText = ({ id, title, body }: Props) => {
       </p>
     </Prose>
   );
-};
+}

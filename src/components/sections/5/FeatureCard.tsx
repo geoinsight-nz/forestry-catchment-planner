@@ -7,7 +7,6 @@ import { useFeatureStore } from "@/stores/store";
 type FeatureCardProps = {
   id: string;
   image: string;
-  caption: string;
 };
 
 export default function FeatureCard({ id, image }: FeatureCardProps) {
