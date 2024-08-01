@@ -1,4 +1,4 @@
-import TeamMemberCard from "@/components/sections/6/TeamMemberCard";
+import TeamMemberCard from "@/components/sections/7/TeamMemberCard";
 import andrewHoldaway from "/public/images/team/raw/andrew_holdaway.png";
 import blaineWestern from "/public/images/team/raw/blaine_western.png";
 import brendaRosser from "/public/images/team/raw/brenda_rosser.png";

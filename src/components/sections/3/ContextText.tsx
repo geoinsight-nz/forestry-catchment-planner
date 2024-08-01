@@ -3,15 +3,16 @@ import { readJSONFile } from "@/utils/readJSONFile";
 import path from "path";
 
 type Data = {
-    heading?: string;
-    "paragraph-one"?: string;
-    "paragraph-two"?: string;
+  heading: string;
+  "paragraph-one": string;
+  "paragraph-two": string;
+  "paragraph-three": string;
 };
 
-export default async function ApplicationText() {
+export default async function ContextText() {
   const filePath = path.join(
     process.cwd(),
-    "src/app/_content/sections/2",
+    "src/app/_content/sections/3",
     "content.json",
   );
 
@@ -23,7 +24,7 @@ export default async function ApplicationText() {
   return (
     <>
       <header className="mb-14">
-        <h2 className="mb-14 text-balance text-xl font-medium text-brand-950 dark:text-foreground lg:text-3xl">
+        <h2 className="text-balance text-xl font-medium text-brand-950 dark:text-foreground lg:text-3xl">
           {content?.heading}
         </h2>
       </header>
@@ -34,6 +35,9 @@ export default async function ApplicationText() {
           </p>
           <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
             {content?.["paragraph-two"]}
+          </p>
+          <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
+            {content?.["paragraph-three"]}
           </p>
         </article>
       </Prose>

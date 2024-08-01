@@ -3,8 +3,8 @@ import Image from "next-export-optimize-images/image";
 import { type ImageProps, type StaticImageData } from "next/image";
 import Link from "next/link";
 import { Children, Fragment, type ComponentPropsWithoutRef } from "react";
-import FeatureCard from "../sections/4/FeatureCard";
-import { FeatureText } from "../sections/4/FeatureText";
+import FeatureCard from "../sections/5/FeatureCard";
+import { FeatureText } from "../sections/5/FeatureText";
 import DynamicImage from "../shared/DynamicImage";
 
 export const a = Link;
