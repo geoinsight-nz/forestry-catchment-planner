@@ -1,13 +1,12 @@
 import { Prose } from "@/components/mdx/Prose";
 import Image from "next-export-optimize-images/image";
-import { type StaticImageData } from "next/image";
 
 type TeamMemberProps = {
   name: string;
   role?: string;
-  instition: string;
+  instition?: string;
   id: string;
-  image: StaticImageData;
+  image: string;
 };
 
 export default function TeamMemberCard({
@@ -24,6 +23,8 @@ export default function TeamMemberCard({
           id={id}
           src={image}
           alt={name}
+          width={268}
+          height={402}
           sizes="20vw"
           className="aspect-[2/3] h-auto w-full rounded-sm object-cover object-top"
         />

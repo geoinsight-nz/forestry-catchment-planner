@@ -1,21 +1,18 @@
-"use client";
-
 import DynamicImage from "@/components/shared/DynamicImage";
-import { type StaticImageData } from "next/image";
 
 type PartnerProps = {
-  title: string;
+  name: string;
   about: string;
-  body: string;
+  role: string;
   id: string;
-  src: StaticImageData;
-  srcDark: StaticImageData;
+  src: string;
+  srcDark: string;
 };
 
 export default function Partner({
-  title,
+  name,
   about,
-  body,
+  role,
   src,
   srcDark,
 }: PartnerProps) {
@@ -24,7 +21,7 @@ export default function Partner({
       <div className="flex flex-col gap-6 transition duration-300">
         <div className="flex gap-4">
           <h2 className="text-xl font-medium text-brand-950 dark:text-brand-50">
-            {title}
+            {name}
           </h2>
         </div>
         <div className="relative flex flex-col gap-4">
@@ -32,15 +29,17 @@ export default function Partner({
             {about}
           </p>
           <p className="max-w-prose text-base text-brand-950  dark:text-brand-50">
-            {body}
+            {role}
           </p>
         </div>
       </div>
-      <div className="relative mr-auto h-auto w-56 max-h-56 md:ml-auto">
+      <div className="relative mr-auto h-auto max-h-56 w-56 md:ml-auto">
         <DynamicImage
           src={src}
           srcDark={srcDark}
-          alt={title}
+          alt={name}
+          width={224}
+          height={224}
           className="md:mx-auto"
         />
       </div>

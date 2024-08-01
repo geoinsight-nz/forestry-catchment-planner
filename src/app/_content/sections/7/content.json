@@ -1,3 +1,54 @@
 {
-    "heading": "Partners"
+    "heading": "Team",
+    "team": [
+        {
+            "name": "Brenda Rosser",
+            "role": "Geomorphologist",
+            "instition": "GNS Science",
+            "id": "brenda-rosser",
+            "image": "/images/team/denoised/brenda_rosser.png"
+        },
+        {
+            "name": "Mark Bloomberg",
+            "role": "Adjunct Senior Fellow",
+            "instition": "Te Kura Ngahere New Zealand School of Forestry, University of Canterbury",
+            "id": "mark-bloomberg",
+            "image": "/images/team/denoised/mark_bloomberg.png"
+        },
+        {
+            "name": "Andrew Holdaway",
+            "role": "Geospatial Application Specialist",
+            "instition": "Indufor",
+            "id": "andrew-holdaway",
+            "image": "/images/team/denoised/andrew_holdaway.png"
+        },
+        {
+            "name": "Pete Watt",
+            "role": "Head Of Resource Monitoring",
+            "instition": "Indufor",
+            "id": "pete-watt",
+            "image": "/images/team/denoised/pete_watt.png"
+        },
+        {
+            "name": "Blaine Western",
+            "role": "Head of Design and Interaction",
+            "instition": "GeoInsight",
+            "id": "blaine-western",
+            "image": "/images/team/denoised/blaine_western.png"
+        },
+        {
+            "name": "Mark Spencer",
+            "role": "Director, Operations Manager",
+            "instition": "GeoInsight",
+            "id": "mark-spencer",
+            "image": "/images/team/denoised/mark_spencer.png"
+        },
+        {
+            "name": "Rob Besaans",
+            "role": "Director, Geospatial & Software Lead",
+            "instition": "GeoInsight",
+            "id": "rob-besaans",
+            "image": "/images/team/denoised/rob_besaans.png"
+        }
+    ]
 }
