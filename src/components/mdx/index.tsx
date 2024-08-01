@@ -1,11 +1,8 @@
 import { cn } from "@/lib/utils";
 import Image from "next-export-optimize-images/image";
-import { type ImageProps, type StaticImageData } from "next/image";
+import { type ImageProps } from "next/image";
 import Link from "next/link";
-import { Children, Fragment, type ComponentPropsWithoutRef } from "react";
-import FeatureCard from "../sections/5/FeatureCard";
-import { FeatureText } from "../sections/5/FeatureText";
-import DynamicImage from "../shared/DynamicImage";
+import { Children, type ComponentPropsWithoutRef } from "react";
 
 export const a = Link;
 
@@ -89,55 +86,5 @@ export function ListItem({ children }: { children: React.ReactNode }) {
     <span className="m-0 h-fit w-auto hyphens-auto break-words px-2 py-0">
       {children}
     </span>
-  );
-}
-
-type Feature = {
-  title: string;
-  body: string;
-  id: string;
-  image: StaticImageData;
-  caption: string;
-};
-
-export function FeaturesList({ features }: { features: Feature[] }) {
-  return (
-    <div className="flex w-full items-start gap-20">
-      <div className="flex w-full flex-col gap-32 lg:pb-[50vh] lg:pt-[30vh]">
-        <ul>
-          {features.map((feature) => (
-            <Fragment key={feature.id}>
-              <figure className="relative flex h-[56vw] w-auto flex-col gap-4 lg:hidden">
-                <DynamicImage
-                  src={feature.image}
-                  alt="Forestry Catchment Planner feature"
-                  fill
-                  className="h-full w-auto rounded-sm object-contain"
-                />
-              </figure>
-              <li key={feature.id}>
-                <FeatureText
-                  id={feature.id}
-                  title={feature.title}
-                  body={feature.body}
-                />
-              </li>
-            </Fragment>
-          ))}
-        </ul>
-      </div>
-      <div className="hidden h-screen w-full items-center lg:sticky lg:top-0 lg:flex">
-        <div className="relative aspect-square w-full rounded-sm">
-          {features.map((feature) => (
-            <FeatureCard
-              id={feature.id}
-              key={feature.id}
-              image={feature.image}
-              caption={feature.caption}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
   );
 }
