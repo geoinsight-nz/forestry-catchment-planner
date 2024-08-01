@@ -4,12 +4,12 @@ import DynamicImage from "@/components/shared/DynamicImage";
 import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
 
-type FeatureCardProps = {
+type FeatureCard = {
   id: string;
   image: string;
 };
 
-export default function FeatureCard({ id, image }: FeatureCardProps) {
+export default function FeatureCard({ id, image }: FeatureCard) {
   const inViewFeature = useFeatureStore((state) => state.inViewFeature);
   return (
     <div
