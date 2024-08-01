@@ -9,7 +9,7 @@ import { type Feature } from "./FeaturesList";
 
 type FeatureText = Omit<Feature, "image">;
 
-export default function FeatureText({ id, title, body }: FeatureText) {
+export default function FeatureText({ id, heading, text }: FeatureText) {
   const ref = useRef<HTMLParagraphElement>(null);
   const isInView = useInView(ref, {
     margin: "-50% 0px -50% 0px",
@@ -29,7 +29,7 @@ export default function FeatureText({ id, title, body }: FeatureText) {
           "text-balance text-xl font-medium text-brand-950 transition-colors dark:text-brand-50 lg:text-3xl",
         )}
       >
-        {title}
+        {heading}
       </h2>
       <p
         ref={ref}
@@ -38,7 +38,7 @@ export default function FeatureText({ id, title, body }: FeatureText) {
           "pt-6 text-sm font-normal text-brand-950 transition-colors dark:text-brand-50 lg:text-base",
         )}
       >
-        {body}
+        {text}
       </p>
     </Prose>
   );
