@@ -12,10 +12,12 @@ import Question from "./Question";
 
 type Data = {
   heading: string;
-  questions: {
+  features: {
     id: string;
     heading: string;
     text: string;
+    image: string;
+    caption?: string;
   }[];
 };
 
@@ -46,9 +48,7 @@ export default async function Science() {
           <div className="flex gap-x-2">
             <MapPin size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          {content?.questions[0] && (
-            <Question question={content?.questions[0]} />
-          )}
+          {content?.features[0] && <Question question={content?.features[0]} />}
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -57,9 +57,7 @@ export default async function Science() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          {content?.questions[1] && (
-            <Question question={content?.questions[1]} />
-          )}
+          {content?.features[1] && <Question question={content?.features[1]} />}
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -72,17 +70,13 @@ export default async function Science() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          {content?.questions[2] && (
-            <Question question={content?.questions[2]} />
-          )}
+          {content?.features[2] && <Question question={content?.features[2]} />}
         </aside>
         <aside className="flex h-80 w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
             <Plant size={48} className="text-brand-50 dark:text-brand-50" />
           </div>
-          {content?.questions[3] && (
-            <Question question={content?.questions[3]} />
-          )}
+          {content?.features[3] && <Question question={content?.features[3]} />}
         </aside>
         <div className="flex h-[22rem]  w-full flex-col gap-y-6 md:w-80">
           <div className="flex gap-x-2">
@@ -91,9 +85,7 @@ export default async function Science() {
               className="text-brand-50 dark:text-brand-50"
             />
           </div>
-          {content?.questions[4] && (
-            <Question question={content?.questions[4]} />
-          )}
+          {content?.features[4] && <Question question={content?.features[4]} />}
         </div>
       </div>
     </section>

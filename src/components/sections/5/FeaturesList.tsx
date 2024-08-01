@@ -1,7 +1,7 @@
 import FeatureCard from "./FeatureCard";
 import FeatureText from "./FeatureText";
 
-type Feature = {
+export type Feature = {
   title: string;
   body: string;
   id: string;

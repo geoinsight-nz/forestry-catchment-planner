@@ -5,14 +5,11 @@ import { cn } from "@/lib/utils";
 import { useFeatureStore } from "@/stores/store";
 import { useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { type Feature } from "./FeaturesList";
 
-type Props = {
-  id: string;
-  title: string;
-  body: string;
-};
+type FeatureText = Omit<Feature, "image">;
 
-export default function FeatureText({ id, title, body }: Props) {
+export default function FeatureText({ id, title, body }: FeatureText) {
   const ref = useRef<HTMLParagraphElement>(null);
   const isInView = useInView(ref, {
     margin: "-50% 0px -50% 0px",
