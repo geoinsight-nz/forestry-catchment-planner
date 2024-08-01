@@ -63,8 +63,6 @@ export function FeaturesMDX(props: any) {
     if (isInView) setInViewFeature(id);
   }, [isInView, id, setInViewFeature, inViewFeature]);
 
-  console.log(inViewFeature);
-
   return (
     <div className="py-16" ref={ref}>
       <MDXRemote
