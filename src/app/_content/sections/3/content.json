@@ -1,6 +1,14 @@
 {
-    "heading": "Transparent and Sustainable Forestry Planning",
-    "paragraph-one": "The Forestry Catchment Planner aims to create a transparent, cohesive system for better understanding intergenerational harvesting cycles on a catchment scale.",
-    "paragraph-two": "The tool provides insights into forestry stand locations, recent harvests, and data on erosion susceptibility hazard for future harvesting schedules.",
-    "paragraph-three": "This enables effective environmental stewardship, improving water quality, promoting healthier ecosystems, and facilitating better holistic planning for future planting and harvesting."
+    "heading": "Data Driven Conversations around Forestry Harvesting",
+    "paragraph-one": "The Forestry Catchment Planner was kindly funded by The National Science Challenge Our Land and Water and aims to create an intuitive, publicly accessible and data driven system for opening intergenerational conversations around plantation forestry harvesting cycles at a catchment scale.",
+    "paragraph-two": "The app helps to visualise:",
+    "paragraph-three": "1) Forest Locations and Ages: Where plantation forest stands are located in the 5 key regions and an accurate approximation of how old they are.",
+    "paragraph-four": "2) Future Harvesting: What the picture of harvesting may look like into the future based on assumptions of harvesting at age 28 and that the window of vulnerability lasts on average 5 years.",
+    "paragraph-five": "3) Catchment Management Units: A consistently sized “Catchment Management Unit” which one can use to measure proportion of harvesting.",
+    "paragraph-six": "4) Hilllope Units: A breakdown of all catchment management units into smaller slope units representing the “headwater streams” ",
+    "paragraph-seven": "5) Landslide and Debris Flow Modelling: Rainfall Induced Landslide Susceptibility Modelling telling and Debris Flow modelling based on the Melton Ratio giving us indication on how vulnerable the land beneath forested land is.",
+    "paragraph-eight": "6) Infrastructure: Civil and Urban Infrastructure such as bridges, power lines, railway lines and building footprints to make it easier to see what’s nearby",
+    "paragraph-nine": "7) Māori Land Features: Māori land and related features such as Mārae locations and Māori land blocks to help Tangata Whenua to understand their connection to the conversations.",
+    "paragraph-ten": "In the past a lot of this data was difficult to get hold of and either incomplete or inconsistent between the 5 regions. For the first time ever, councils, Iwi, Hapu, forestry management companies and even members of the public can have meaningful conversations about land management in relation to forestry harvesting cycles across multiple regions and catchments, spanning through time. ",
+    "paragraph-eleven": "This collaborative approach ensures that environmental and cultural values are upheld, promoting sustainable and resilient land management practices for future generations."
 }
