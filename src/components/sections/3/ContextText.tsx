@@ -2,11 +2,13 @@ import { Prose } from "@/components/mdx/Prose";
 import { readJSONFile } from "@/utils/readJSONFile";
 import path from "path";
 
+type Paragraph = {
+  text: string;
+};
+
 type Data = {
-  heading: string;
-  "paragraph-one": string;
-  "paragraph-two": string;
-  "paragraph-three": string;
+  heading?: string;
+  paragraphs?: Paragraph[];
 };
 
 export default async function ContextText() {
@@ -28,17 +30,16 @@ export default async function ContextText() {
           {content?.heading}
         </h2>
       </header>
-      <Prose className="mx-auto">
-        <article>
-          <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-            {content?.["paragraph-one"]}
-          </p>
-          <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-            {content?.["paragraph-two"]}
-          </p>
-          <p className="text-balance text-sm font-normal text-brand-950 dark:text-foreground lg:text-base">
-            {content?.["paragraph-three"]}
-          </p>
+      <Prose>
+        <article className="h-full">
+          {content.paragraphs?.map((paragraph, index) => (
+            <p
+              key={index}
+              className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
+            >
+              {paragraph.text}
+            </p>
+          ))}
         </article>
       </Prose>
     </>
