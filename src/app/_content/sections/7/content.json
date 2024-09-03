@@ -49,6 +49,13 @@
             "instition": "GeoInsight",
             "id": "rob-besaans",
             "image": "/images/team/denoised/rob_besaans.png"
+        },
+        {
+            "name": "Henry Babbage",
+            "role": "Front End Programmer",
+            "instition": "GeoInsight",
+            "id": "henry-babbage",
+            "image": "/images/team/denoised/henry_babbage.png"
         }
     ]
 }
