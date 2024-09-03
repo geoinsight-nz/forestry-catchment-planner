@@ -3,7 +3,8 @@ import { readJSONFile } from "@/utils/readJSONFile";
 import path from "path";
 
 type Paragraph = {
-  text: string;
+  text?: string;
+  listItems?: string[];
 };
 
 type Data = {
@@ -32,14 +33,27 @@ export default async function ContextText() {
       </header>
       <Prose>
         <article className="h-full">
-          {content.paragraphs?.map((paragraph, index) => (
-            <p
-              key={index}
-              className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
-            >
-              {paragraph.text}
-            </p>
-          ))}
+          {content.paragraphs?.map((paragraph, index) =>
+            paragraph.text ? (
+              <p
+                key={index}
+                className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
+              >
+                {paragraph.text}
+              </p>
+            ) : paragraph.listItems ? (
+              <ol key={index}>
+                {paragraph.listItems.map((item, itemIndex) => (
+                  <li
+                    key={itemIndex}
+                    className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ol>
+            ) : null,
+          )}
         </article>
       </Prose>
     </>

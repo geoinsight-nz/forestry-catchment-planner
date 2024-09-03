@@ -115,6 +115,10 @@
     @apply cursor-pointer underline-offset-8 decoration-2;
   }
 
+  ul {
+    @apply list-disc;
+  }
+
   [inert] ::-webkit-scrollbar {
     display: none;
   }
