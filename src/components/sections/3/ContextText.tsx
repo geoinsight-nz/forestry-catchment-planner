@@ -4,7 +4,10 @@ import path from "path";
 
 type Paragraph = {
   text?: string;
-  listItems?: string[];
+  listItems?: {
+    subheading?: string;
+    text?: string;
+  }[];
 };
 
 type Data = {
@@ -48,7 +51,10 @@ export default async function ContextText() {
                     key={itemIndex}
                     className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
                   >
-                    {item}
+                    {item.subheading && (
+                      <strong className="font-bold">{item.subheading}: </strong>
+                    )}
+                    {item.text}
                   </li>
                 ))}
               </ol>
