@@ -6,6 +6,6 @@ type FeaturesStore = {
 };
 
 export const useFeatureStore = create<FeaturesStore>((set) => ({
-  inViewFeature: "001",
+  inViewFeature: "q1",
   setInViewFeature: (feature: string | null) => set({ inViewFeature: feature }),
 }));

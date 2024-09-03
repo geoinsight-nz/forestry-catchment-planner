@@ -22,7 +22,7 @@ export default function FeatureText({ id, heading, text }: FeatureText) {
   }, [isInView, id, setInViewFeature, inViewFeature]);
 
   return (
-    <div ref={ref}>
+    <span ref={ref}>
       <Prose className="py-16">
         <h2
           className={cn(
@@ -41,6 +41,6 @@ export default function FeatureText({ id, heading, text }: FeatureText) {
           {text}
         </p>
       </Prose>
-    </div>
+    </span>
   );
 }
