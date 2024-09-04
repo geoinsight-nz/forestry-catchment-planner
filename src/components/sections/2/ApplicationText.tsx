@@ -30,13 +30,32 @@ export default async function ApplicationText() {
         </h2>
       </header>
       <Prose>
-        <article className="h-full">
+        <article className="h-full text-sm font-normal">
           {content.paragraphs?.map((paragraph, index) => (
             <p
               key={index}
               className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
             >
-              {paragraph.text}
+              <span key={index}>
+                {paragraph.text
+                  ?.split(/(\[.*?\]\(.*?\))/)
+                  .map((part, index) => {
+                    const match = part.match(/\[(.*?)\]\((.*?)\)/);
+                    if (match) {
+                      const [, linkText, url] = match;
+                      return (
+                        <a
+                          key={index}
+                          href={url}
+                          className="decoration-1 underline-offset-4 hover:underline"
+                        >
+                          {linkText}
+                        </a>
+                      );
+                    }
+                    return part;
+                  })}
+              </span>
             </p>
           ))}
         </article>

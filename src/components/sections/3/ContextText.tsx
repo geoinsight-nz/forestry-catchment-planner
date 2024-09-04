@@ -1,5 +1,6 @@
 import { Prose } from "@/components/mdx/Prose";
 import { readJSONFile } from "@/utils/readJSONFile";
+import { RenderMarkdownLink } from "@/utils/RenderMarkdownLink";
 import path from "path";
 
 type Paragraph = {
@@ -27,6 +28,7 @@ export default async function ContextText() {
   if (content === null) {
     return null;
   }
+
   return (
     <>
       <header className="mb-14">
@@ -42,7 +44,24 @@ export default async function ContextText() {
                 key={index}
                 className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
               >
-                {paragraph.text}
+                {paragraph.text
+                  ?.split(/(\[.*?\]\(.*?\))/)
+                  .map((part, index) => {
+                    const match = part.match(/\[(.*?)\]\((.*?)\)/);
+                    if (match) {
+                      const [, linkText, url] = match;
+                      return (
+                        <a
+                          key={index}
+                          href={url}
+                          className="decoration-1 underline-offset-4 hover:underline"
+                        >
+                          {linkText}
+                        </a>
+                      );
+                    }
+                    return part;
+                  })}
               </p>
             ) : paragraph.listItems ? (
               <ol key={index}>
@@ -52,9 +71,26 @@ export default async function ContextText() {
                     className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
                   >
                     {item.subheading && (
-                      <strong className="font-bold">{item.subheading}: </strong>
+                      <strong className="font-bold">
+                        {RenderMarkdownLink(item.subheading)}:{" "}
+                      </strong>
                     )}
-                    {item.text}
+                    {item.text?.split(/(\[.*?\]\(.*?\))/).map((part, index) => {
+                      const match = part.match(/\[(.*?)\]\((.*?)\)/);
+                      if (match) {
+                        const [, linkText, url] = match;
+                        return (
+                          <a
+                            key={index}
+                            href={url}
+                            className="decoration-1 underline-offset-4 hover:underline"
+                          >
+                            {linkText}
+                          </a>
+                        );
+                      }
+                      return part;
+                    })}
                   </li>
                 ))}
               </ol>

@@ -112,7 +112,7 @@
   }
 
   a {
-    @apply cursor-pointer underline-offset-8 decoration-2;
+    @apply cursor-pointer;
   }
 
   ul {

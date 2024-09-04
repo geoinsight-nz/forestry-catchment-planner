@@ -3,7 +3,7 @@
     "paragraphs": [
         {
             "id": "paragraph-intro",
-            "text": "The Forestry Catchment Planner was kindly funded by The National Science Challenge Our Land and Water and aims to create an intuitive, publicly accessible and data driven system for opening intergenerational conversations around plantation forestry harvesting cycles at a catchment scale."
+            "text": "The Forestry Catchment Planner was kindly funded by The National Science Challenge [Our Land and Water](https://ourlandandwater.nz/) and aims to create an intuitive, publicly accessible and data driven system for opening intergenerational conversations around plantation forestry harvesting cycles at a catchment scale."
         },
         {
             "id": "paragraphs-subheading",
@@ -21,16 +21,16 @@
                     "text": "What the picture of harvesting may look like into the future based on assumptions of harvesting at age 28 and that the window of vulnerability lasts on average 5 years."
                 },
                 {
-                    "subheading": "Catchment Management Units",
+                    "subheading": "[Catchment Management Units](https://www.docs.forestrycatchmentplanner.nz/catchment-management-units)",
                     "text": "A consistently sized 'Catchment Management Unit' which one can use to measure proportion of harvesting."
                 },
                 {
-                    "subheading": "Hilllope Units",
+                    "subheading": "[Hillslope Units](https://www.docs.forestrycatchmentplanner.nz/hill-slope-units)",
                     "text": "A breakdown of all catchment management units into smaller slope units representing the 'headwater streams'"
                 },
                 {
                     "subheading": "Landslide and Debris Flow Modelling",
-                    "text": "Rainfall Induced Landslide Susceptibility Modelling telling and Debris Flow modelling based on the Melton Ratio giving us indication on how vulnerable the land beneath forested land is."
+                    "text": "Rainfall Induced Landslide Susceptibility Modelling telling and [Debris Flow](https://www.docs.forestrycatchmentplanner.nz/erosion-susceptibility#debris-flows) modelling based on the [Melton Ratio](https://www.docs.forestrycatchmentplanner.nz/melton-ratio) giving us indication on how vulnerable the land beneath forested land is."
                 },
                 {
                     "subheading": "Infrastructure",

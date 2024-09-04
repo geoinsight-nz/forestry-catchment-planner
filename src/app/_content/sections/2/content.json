@@ -1,12 +1,29 @@
 {
     "heading": "Erosion in New Zealand's Forested Landscapes",
     "paragraphs": [
-        { "id": "paragraph-one", "text": "It’s important to note that historically plantation forests were planted in steep, erosion prone land as a mechanism to reduce erosion and sedimentation. They do this really well and it’s a really valuable erosion solution valued at nearly $1 billion per year (Yao et al. 2021)." },
-        { "id": "paragraph-two", "text": "Forests on steep, erosion-prone land significantly reduce landslides and erosion compared to bare pasture due to their thick roots and leafy canopies. The tree roots reinforce the soil and the umbrella effect of the tree canopy slows rainfall, keeps soils drier and stronger which in turn helps prevent slipping and erosion." },
-        { "id": "paragraph-three", "text": "Forests on steep, erosion-prone land significantly reduce landslides and erosion compared to bare pasture due to their thick roots and leafy canopies. The tree roots reinforce the soil and the umbrella effect of the tree canopy slows rainfall, keeps soils drier and stronger which in turn helps prevent slipping and erosion." },
-        { "id": "paragraph-four", "text": "However, plantation forests in New Zealand are usually clear-felled at maturity, typically between 25 and 30 years of age but on average around 28 years of age (source: Te Ara | Story: Radiata Pine). This can differ depending on the local climate, soil types, topography and other factors." },
-        { "id": "paragraph-five", "text": "After harvesting is finished, it creates what is known in the industry as a “window of vulnerability” for about 5 years until the new crop establishes itself. During this period, the risk of erosion is much greater and landslides can move woody debris downslope." },
-        { "id": "paragraph-six", "text": "Debris flows occur when heavy rainfall causes landslides to deliver large quantities of sediment to stream channels in a short period of time. The combination of landslides and debris flows represent significant contributors of erosion and sediment downstream. This has impacts on our environment, our economy, our infrastructure and our communities." },
-        { "id": "paragraph-seven", "text": "This project was about providing data in an intuitive way to help all manner of people engage in conversations about where harvesting is happening now and in the future and creating windows of vulnerability in our landscapes and how those are related to the potential of landslides occurring and the potential for those landslides becoming debris flows." }
+        {
+            "id": "paragraph-one",
+            "text": "It’s important to note that historically plantation forests were planted in steep, erosion prone land as a mechanism to reduce erosion and sedimentation. They do this really well and it’s a really valuable erosion solution valued at nearly $1 billion per year (Yao et al. 2021)."
+        },
+        {
+            "id": "paragraph-two",
+            "text": "Forests on steep, erosion-prone land significantly reduce landslides and erosion compared to bare pasture due to their thick roots and leafy canopies. The tree roots reinforce the soil and the umbrella effect of the tree canopy slows rainfall, keeps soils drier and stronger which in turn helps prevent slipping and erosion."
+        },
+        {
+            "id": "paragraph-three",
+            "text": "However, plantation forests in New Zealand are usually [clear-felled](https://www.docs.forestrycatchmentplanner.nz/clearfelling) at maturity, typically between 25 and 30 years of age but on average around 28 years of age (source: Te Ara | [Story: Radiata Pine](https://teara.govt.nz/en/radiata-pine/page-4#:~:text=Under%20very%20good%20conditions%2C%20such,when%20harvested%20at%2028%20years.)). This can differ depending on the local climate, soil types, topography and other factors."
+        },
+        {
+            "id": "paragraph-four",
+            "text": "After harvesting is finished, it creates what is known in the industry as a [“window of vulnerability”](https://www.docs.forestrycatchmentplanner.nz/clearfelling#window-of-vulnerability) for about 5 years until the new crop establishes itself. During this period, the risk of erosion is much greater and landslides can move woody debris downslope."
+        },
+        {
+            "id": "paragraph-five",
+            "text": "[Debris flows](https://www.docs.forestrycatchmentplanner.nz/erosion-susceptibility#debris-flows) occur when heavy rainfall causes landslides to deliver large quantities of sediment to stream channels in a short period of time. The combination of landslides and debris flows represent significant contributors of erosion and sediment downstream. This has impacts on our environment, our economy, our infrastructure and our communities."
+        },
+        {
+            "id": "paragraph-six",
+            "text": "This project was about providing data in an intuitive way to help all manner of people engage in conversations about where harvesting is happening now and in the future and creating windows of vulnerability in our landscapes and how those are related to the potential of landslides occurring and the potential for those landslides becoming debris flows."
+        }
     ]
 }

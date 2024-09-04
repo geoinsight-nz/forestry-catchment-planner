@@ -137,7 +137,7 @@ export function SiteHeader() {
 
           <div className="ml-auto hidden h-full items-center space-x-16 md:flex">
             <Link
-              className="group flex space-x-4"
+              className="group flex space-x-4 decoration-2 underline-offset-8"
               href="https://docs.forestrycatchmentplanner.nz"
               target="_blank"
               rel="noopener"
@@ -151,7 +151,7 @@ export function SiteHeader() {
               </h2>
             </Link>
             <Link
-              className="text-md group flex space-x-4 group-hover:underline"
+              className="text-md group flex space-x-4 decoration-2 underline-offset-8 group-hover:underline"
               href="https://catchment.maphq.co.nz"
               target="_blank"
               rel="noopener"
@@ -199,7 +199,7 @@ export function SiteHeader() {
             </button>
           </div>
           <motion.ul
-            className={`flex flex-col px-8 ease-in md:flex-row md:items-center md:normal-case`}
+            className={`flex !list-none flex-col px-8 ease-in md:flex-row md:items-center md:normal-case`}
             variants={containerVariants}
             initial="initial"
             animate={hamburgerMenuIsOpen ? "open" : "exit"}
