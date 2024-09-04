@@ -1,6 +1,6 @@
 import { Prose } from "@/components/mdx/Prose";
 import { readJSONFile } from "@/utils/readJSONFile";
-import { RenderMarkdownLink } from "@/utils/RenderMarkdownLink";
+import { renderMarkdownHeadingLink } from "@/utils/renderMarkdownHeadingLink";
 import path from "path";
 
 type Paragraph = {
@@ -71,9 +71,9 @@ export default async function ContextText() {
                     className="text-balance text-sm font-normal text-brand-950 dark:text-foreground md:text-sm xl:text-sm"
                   >
                     {item.subheading && (
-                      <strong className="font-bold">
-                        {RenderMarkdownLink(item.subheading)}:{" "}
-                      </strong>
+                      <span className="font-bold">
+                        {renderMarkdownHeadingLink(item.subheading)}:{" "}
+                      </span>
                     )}
                     {item.text?.split(/(\[.*?\]\(.*?\))/).map((part, index) => {
                       const match = part.match(/\[(.*?)\]\((.*?)\)/);

@@ -1,4 +1,4 @@
-export function RenderMarkdownLink(text: string) {
+export function renderMarkdownHeadingLink(text: string) {
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/;
   const match = text.match(linkRegex);
 
@@ -11,7 +11,7 @@ export function RenderMarkdownLink(text: string) {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="decoration-1 underline-offset-4"
+          className="font-bold decoration-1 underline-offset-4"
         >
           {linkText}
         </a>
