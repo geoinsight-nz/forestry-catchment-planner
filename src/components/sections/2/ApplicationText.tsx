@@ -47,6 +47,7 @@ export default async function ApplicationText() {
                         <a
                           key={index}
                           href={url}
+                          target="_blank"
                           className="decoration-1 underline-offset-4 hover:underline"
                         >
                           {linkText}
