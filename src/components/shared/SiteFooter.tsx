@@ -58,6 +58,36 @@ const footerNavs: FooterNavSet[] = [
     ],
   },
   {
+    label: "Contributors",
+    items: [
+      {
+        href: "https://www.linkedin.com/in/usha-macdonald-95388314a",
+        name: "Usha MacDonald",
+        link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/brad-chandler-445b8797",
+        name: "Brad Chandler",
+        link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/alexkorban",
+        name: "Alex Korban",
+        link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/brian-law-a5a50184",
+        name: "Brian Law",
+        link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/monkey-code-good",
+        name: "John Grant",
+        link: true,
+      },
+    ],
+  },
+  {
     label: "Colophon",
     items: [
       {
@@ -109,7 +139,7 @@ export function SiteFooter() {
               Proactive forest management for the future.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:max-w-4xl sm:grid-cols-3 sm:gap-10">
+          <div className="grid grid-cols-1 gap-8 sm:max-w-4xl sm:grid-cols-4 sm:gap-10">
             {footerNavs.map((nav: FooterNavSet) => (
               <div key={nav.label}>
                 <h2 className="mb-6 text-sm font-medium uppercase tracking-tighter text-gray-900 dark:text-white">
