@@ -107,7 +107,7 @@ const footerNavs: FooterNavSet[] = [
       },
       {
         href: "",
-        name: "Programming:",
+        name: "Development:",
         link: false,
       },
       {
