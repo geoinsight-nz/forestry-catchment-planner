@@ -58,16 +58,16 @@ const footerNavs: FooterNavSet[] = [
     ],
   },
   {
-    label: "Contributors",
+    label: "Project Team",
     items: [
-      {
-        href: "https://www.linkedin.com/in/usha-macdonald-95388314a",
-        name: "Usha MacDonald",
-        link: true,
-      },
       {
         href: "https://www.linkedin.com/in/brad-chandler-445b8797",
         name: "Brad Chandler",
+        link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/monkey-code-good",
+        name: "John Grant",
         link: true,
       },
       {
@@ -81,14 +81,19 @@ const footerNavs: FooterNavSet[] = [
         link: true,
       },
       {
-        href: "https://www.linkedin.com/in/monkey-code-good",
-        name: "John Grant",
+        href: "https://www.linkedin.com/in/usha-macdonald-95388314a",
+        name: "Usha MacDonald",
         link: true,
+      },
+      {
+        href: "https://www.linkedin.com/in/blainewestern",
+        name: "Blaine Western",
+        link: false,
       },
     ],
   },
   {
-    label: "Colophon",
+    label: "Landing Page",
     items: [
       {
         href: "",
@@ -96,12 +101,12 @@ const footerNavs: FooterNavSet[] = [
         link: false,
       },
       {
-        href: "",
+        href: "https://www.linkedin.com/in/blainewestern",
         name: "Blaine Western",
         link: false,
       },
       {
-        href: "",
+        href: "https://www.linkedin.com/in/henrybabbage",
         name: "Henry Babbage",
         link: false,
       },
